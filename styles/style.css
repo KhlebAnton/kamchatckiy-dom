@@ -69,6 +69,36 @@ body.no-scrolled {
 }
 
 /* header start */
+
+/* тут сделал при аторизации и без дается хедеру auth(при + авторизации) */
+.header .btn_favourit{
+    display: none;
+}
+.header.auth .btn_favourit{
+    display: flex;
+}
+.header .btn_account_auth {
+    display: none;
+}
+.header.auth .btn_account_auth {
+    display: flex;
+}
+.header .btn_account {
+    display: flex;
+}
+.header.auth .btn_account {
+    display: none;
+}
+.header.auth ~ .header__menu .btn_account {
+    display: none;
+}
+.header ~ .header__menu .btn_account_auth {
+    display: none;
+}
+.header.auth ~ .header__menu .btn_account_auth {
+    display: flex;
+}
+/* конец авторизации тест */
 .header {
     padding: 20px 0;
     background-color: var(--white);
@@ -208,6 +238,7 @@ input {
     overflow-y: auto;
 
     min-width: 550px;
+    width: 100%;
     left: 0;
     right: auto;
     padding: 24px;
@@ -426,7 +457,7 @@ input {
     stroke: var(--white);
     color: var(--white);
 }
-
+.btn_account_auth,
 .btn_account {
     color: var(--black);
 }
@@ -1327,7 +1358,8 @@ a.header__catalog-category_mobile__item::after {
     .search-content__title {
         font-size: 16px;
     }
-
+    
+.header .btn_account_auth.mobile_hidden,
     .btn_account.mobile_hidden,
     .btn_catalog.mobile_hidden,
     .header__tel,
