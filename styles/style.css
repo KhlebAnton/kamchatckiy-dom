@@ -2389,7 +2389,9 @@ a.header__catalog-category_mobile__item::after {
     margin: 0 auto;
     margin-top: 60px;
 }
-
+.btn_form_link-acc {
+        max-width: 294px;
+    }
 @media (max-width:800px) {
     .modal__content {
         padding: 32px 16px;
@@ -2486,6 +2488,7 @@ a.header__catalog-category_mobile__item::after {
         font-size: 14px;
         max-width: 300px;
     }
+    
 }
 
 /* modal end */
