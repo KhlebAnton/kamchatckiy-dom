@@ -6,13 +6,13 @@ const searchInput = document.getElementById('search-input');
 const searchReset = document.getElementById('search-reset');
 const searchBtn = document.getElementById('search-btn');
 const searchLabel = document.querySelector('.label_search');
-btnSearchMobile.addEventListener('click', ()=> {
+btnSearchMobile.addEventListener('click', () => {
     searchWrapper.classList.add('open');
     toggleScroll(false)
 });
 
-document.addEventListener('click', (e)=> {
-     if (!searchLabel.contains(e.target) &&  !btnSearchMobile.contains(e.target) && searchWrapper.classList.contains('open')) {
+document.addEventListener('click', (e) => {
+    if (!searchLabel.contains(e.target) && !btnSearchMobile.contains(e.target) && searchWrapper.classList.contains('open')) {
         searchWrapper.classList.remove('open');
         toggleScroll(true);
     }
@@ -106,7 +106,7 @@ searchInput.addEventListener('focus', () => {
 
 searchInput.addEventListener('blur', () => {
     startAnimation();
-     searchContent.classList.remove('open')
+    searchContent.classList.remove('open')
 });
 
 searchInput.addEventListener('input', function () {
@@ -119,14 +119,14 @@ searchInput.addEventListener('input', function () {
 
 searchReset.addEventListener('click', function () {
     searchInput.value = '';
-     searchInput.focus();
+    searchInput.focus();
     this.classList.remove('active');
     searchInput.placeholder = "Найти";
 });
 searchBtn.addEventListener('click', function () {
-   
+
     searchInput.focus();
-    
+
 });
 
 // dropdown
@@ -172,8 +172,8 @@ function updateCategoriesContent(categories) {
         catlogCategoriesContent.forEach(content => {
             if (content.getAttribute('data-category') === 'База') {
                 catlogCategories.forEach(item => {
-            item.classList.remove('active');
-        });
+                    item.classList.remove('active');
+                });
                 content.classList.add('open')
             }
         });
@@ -184,12 +184,12 @@ function updateCategoriesContent(categories) {
 // header catalog
 const btnCatalog = document.querySelector('.btn_catalog');
 const headerCatalog = document.querySelector('.header__catalog');
-btnCatalog.addEventListener('click', ()=> {
+btnCatalog.addEventListener('click', () => {
     btnCatalog.classList.toggle('active');
     headerCatalog.classList.toggle('open');
-    if(headerCatalog.classList.contains('open')) {
-         updateCategoriesContent();
-         toggleScroll(false)
+    if (headerCatalog.classList.contains('open')) {
+        updateCategoriesContent();
+        toggleScroll(false)
     } else {
         toggleScroll(true)
     }
@@ -213,26 +213,55 @@ const btnMenu = document.querySelector('.btn-menu');
 const headerMenu = document.querySelector('.header__menu');
 
 
-btnMenu.addEventListener('click', ()=> {
+btnMenu.addEventListener('click', () => {
     closeAllMenu()
-    
+
 });
 function closeAllMenu() {
     btnMenu.classList.toggle('active');
     headerMenu.classList.toggle('open');
-    if(headerMenu.classList.contains('open')) {
+    if (headerMenu.classList.contains('open')) {
         toggleScroll(false)
     } else {
         toggleScroll(true);
-        catalogMobileContent.classList.remove('open')
+        catalogMobileContent.classList.remove('open');
+         subcategoryMenu.classList.remove('open')
     }
- 
+
 }
 const btnCatalogMobile = document.querySelector('.btn_catalog_mobile');
 const catalogMobileContent = document.querySelector('.header__category_mobile');
+const btnBackCategory = catalogMobileContent.querySelector('.btn_prev_category');
 
-btnCatalogMobile.addEventListener('click', ()=> {
+btnBackCategory.addEventListener('click', () => {
+    catalogMobileContent.classList.remove('open')
+})
+
+btnCatalogMobile.addEventListener('click', () => {
     catalogMobileContent.classList.add('open')
+});
+
+// subvategory
+const subcategoryMenu = document.querySelector('.header__subcategory_mobile');
+const categoryMobilItems = document.querySelectorAll('.header__catalog-category_mobile__item[data-category]');
+const categoryContentMobile = document.querySelectorAll('.category__content_mobile');
+
+const btnBackSubcategory = subcategoryMenu.querySelector('.btn_prev_subcategory');
+
+categoryMobilItems.forEach(sub => {
+    sub.addEventListener('click', () => {
+        let categ = sub.getAttribute('data-category');
+        categoryContentMobile.forEach(cont => cont.classList.remove('open'));
+        categoryContentMobile.forEach(cont=> {
+            if(cont.getAttribute('data-category').toLowerCase() === categ.toLowerCase()) {
+                cont.classList.add('open')
+            };
+        });
+        subcategoryMenu.classList.add('open')
+    })
+});
+btnBackSubcategory.addEventListener('click', ()=> {
+     subcategoryMenu.classList.remove('open')
 })
 
 document.addEventListener('DOMContentLoaded', () => {
