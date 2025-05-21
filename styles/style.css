@@ -1683,10 +1683,21 @@ a.header__catalog-category_mobile__item::after {
 }
 
 .footer__top-line {
+    position: relative;
     height: 175px;
     background: url('../img/line_footer.png') 0 0 / auto 100% repeat-x;
     background-color: var(--white);
     animation: moveLine 15s linear infinite;
+}
+.footer__top-line::after {
+    content: '';
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    background-color: var(--black);
+    height: 15px;
+    position: absolute;
+    pointer-events: none;
 }
 
 @keyframes moveLine {
