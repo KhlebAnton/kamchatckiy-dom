@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <!-- тут все для хедера -->
     <header class="header">
         <div class="header__content container">
             <a href="#" class="header-logo_wrapper">
@@ -270,7 +271,7 @@
                                 stroke="#163E71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                         <div class="count-busket">12</div>
-                        
+
                     </a>
                     <div class="btn btn_header btn_favourit">
                         <svg class="btn_header_img" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -2067,6 +2068,7 @@
 
         </div>
     </div>
+    <!-- конец нужного для хедера -->
     <main>
         <div class="container test">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident corrupti quisquam doloribus eligendi
@@ -2265,6 +2267,116 @@
 
         </div>
     </main>
+    <!-- начало окон модальных -->
+    <div class="modal modal-auth">
+        <div class="modal__content">
+            <div class="modal__title">
+                Вход
+            </div>
+            <form class="modal__form form_auth">
+                <div class="modal__form-close"></div>
+                <label class="form__label">
+                    <input class="form__input" name="phone" type="tel" required>
+                    <span class="form__input-placeholder">Номер телефона</span>
+                </label>
+                <label class="form__label label_password">
+                    <input class="form__input" name="pass" type="password" required>
+                    <span class="form__input-placeholder">Пароль</span>
+                    <span class="input_err">Неверный пароль</span>
+                </label>
+                <div class="form_bottom">
+                    <label class="form_label_check">
+                        <input type="checkbox" name="remember">
+                        <div class="checkbox-marker"></div>
+                        <span>
+                            Запомнить меня
+                        </span>
+                    </label>
+                    <a class="link_password_remember" href="#">Забыли пароль?</a>
+                </div>
+
+                <button class="btn btn-primary btn_form" type="submit">Войти</button>
+            </form>
+            <div class="modal__bottom open_registration">
+
+                Если вы впервые на сайте, и хотите, чтобы мы вас помнили,
+                и все ваши заказы сохранялись, то пройдите
+                <span class="link_open-regist">регистрацию</span>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-regist ">
+        <div class="modal__content">
+            <div class="modal__title">
+                Регистрация
+            </div>
+            <form class="modal__form form_regist">
+                <div class="modal__form-close"></div>
+                <label class="form__label">
+                    <input class="form__input" name="name" type="text" required>
+                    <span class="form__input-placeholder">Имя</span>
+                </label>
+                <label class="form__label">
+                    <input class="form__input" name="surname" type="text" required>
+                    <span class="form__input-placeholder">Фамилия</span>
+                </label>
+                <label class="form__label">
+                    <input class="form__input" name="phone" type="tel" required>
+                    <span class="form__input-placeholder">Телефон</span>
+                </label>
+                <label class="form__label ">
+                    <input class="form__input" name="email" type="email" required>
+                    <span class="form__input-placeholder">E-mail</span>
+
+                </label>
+                <div class="form_captcha__container">
+                    <img src="./img/captcha.png" alt="">
+                </div>
+                <label class="form_label_check">
+                    <input type="checkbox" name="politics" required>
+                    <div class="checkbox-marker"></div>
+                    <span>
+                        Даю свое согласие на обработку <a href="#">персональных данных</a>
+                    </span>
+                </label>
+
+
+
+                <button class="btn btn-primary btn_form btn_form_regist" type="submit">Зарегистрироваться</button>
+            </form>
+            <div class="modal__bottom open_auth">
+
+                Уже зарегистрированы?
+                <span class="link_open-regist">Войдите</span>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-alert">
+        <div class="modal__content">
+            <svg class="modal-alert__img" width="121" height="124" viewBox="0 0 121 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_278_16756)">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M96.278 76.4881C90.6154 89.2539 75.5395 99.9064 61.3504 99.7183C43.2069 99.9643 25.6305 84.2098 23.7987 66.2625C22.9555 57.9691 24.7146 48.554 29.5921 41.6718C36.5122 31.8876 48.9204 24.1298 61.1614 24.2962C73.5187 24.1298 86.0723 32.0468 92.9561 41.9902C99.331 51.2027 100.814 66.248 96.2707 76.4881H96.278ZM1.04666 36.6495C2.57316 35.4626 4.08511 35.6942 5.85875 36.056L6.01867 36.0922C10.9834 37.4744 15.9772 38.7554 20.8475 40.4415L20.971 40.485C23.3625 41.4764 24.6273 43.9007 23.2826 46.2599C22.0178 48.4889 19.6844 48.308 17.5982 47.6205C14.0073 46.5784 3.44544 44.1468 1.11208 41.7369C0.152575 40.7455 -0.0654951 39.9494 0.021733 38.5962L0.0944231 37.3948L1.04666 36.6495ZM56.5892 18.2752C56.5892 13.687 56.2257 9.07719 56.7709 4.50352C57.0908 1.79696 58.7045 -1.05435 61.8883 0.40025C63.8219 1.28314 63.88 3.31669 64.1708 5.09694C64.5706 7.57917 64.4979 10.5028 64.4543 13.0285C64.4106 15.6772 64.5415 21.539 61.0306 22.1035C58.7917 22.4653 56.909 20.7936 56.6183 18.6298L56.5965 18.4489V18.2679L56.5892 18.2752ZM25.6159 13.0864C27.9347 12.3338 29.3086 13.6147 30.5298 15.3805C33.0594 19.0423 36.4031 22.0745 38.9037 25.7798C40.4156 28.0232 39.965 31.3811 36.9047 31.9238C34.0044 32.4376 29.4394 26.6554 27.7603 24.5929C25.7977 22.1758 20.0624 14.8884 25.6087 13.0936L25.6159 13.0864ZM92.8325 13.137C96.1399 11.8995 98.5677 15.2068 97.4483 18.2318C96.6414 20.4173 88.0131 30.9686 85.9778 31.7357C82.6195 33.0093 80.1335 29.5718 81.4928 26.5541C82.307 24.7521 84.4513 22.4219 85.7597 20.866C87.2063 19.1436 88.7546 17.4791 90.0848 15.6627C90.9135 14.5337 91.4296 13.6581 92.8325 13.137ZM120.709 38.1258C121.174 40.4271 119.866 42.1494 117.78 42.9889C113.157 44.8488 107.865 46.6507 102.995 47.6205C101.025 48.0619 99.7671 48.6843 98.0662 46.933C96.0381 44.8415 97.223 41.8961 99.5491 40.6442C102.289 39.1823 116.224 35.2093 118.914 36.0995L120.397 36.5916L120.702 38.1185L120.709 38.1258ZM0.196189 85.4256C0.108961 84.0723 0.327031 83.2763 1.28654 82.2776C3.61989 79.8749 14.189 77.4361 17.7727 76.394C19.8589 75.6993 22.185 75.5184 23.457 77.7473C24.8018 80.1065 23.537 82.5381 21.1382 83.5295L21.0219 83.573C16.1662 85.2953 11.1651 86.5401 6.21493 87.9223L6.1059 87.9512L6.0114 87.9657C4.27411 88.3275 2.75488 88.5591 1.22839 87.3651L0.276148 86.6269L0.196189 85.4256ZM56.8 105.392C57.098 103.228 58.9807 101.556 61.2196 101.918C64.7305 102.483 64.5924 108.337 64.6433 110.993C64.6869 113.519 64.7668 116.443 64.3598 118.925C64.069 120.705 64.0109 122.739 62.0773 123.621C58.8935 125.069 57.2797 122.232 56.9599 119.518C56.4147 114.945 56.7782 110.335 56.7782 105.747V105.573L56.8 105.392ZM25.8049 110.935C20.2587 109.133 25.9939 101.846 27.9566 99.4288C29.6357 97.3663 34.1934 91.5841 37.101 92.0979C40.154 92.6407 40.6046 95.9986 39.0927 98.2348C36.5994 101.94 33.2557 104.972 30.7188 108.634C29.4976 110.4 28.1237 111.681 25.8049 110.928V110.935ZM93.0215 110.892C91.6113 110.364 91.1025 109.495 90.2738 108.366C88.9508 106.55 87.3953 104.885 85.9487 103.163C84.6403 101.607 82.496 99.2769 81.6818 97.4749C80.3225 94.4571 82.8085 91.0196 86.1668 92.2933C88.2021 93.0677 96.8305 103.619 97.6373 105.797C98.7567 108.815 96.3216 112.122 93.0215 110.892ZM119.11 87.9151C116.42 88.8052 102.478 84.8322 99.7453 83.3703C97.4192 82.1256 96.2271 79.1802 98.2552 77.0888C99.9489 75.3375 101.221 75.9526 103.191 76.4013C108.061 77.3782 113.353 79.173 117.976 81.0328C120.062 81.8723 121.371 83.5947 120.905 85.9032L120.593 87.423L119.117 87.9151H119.11ZM37.6025 44.4363C33.5828 50.0882 31.2421 56.7027 31.6856 63.7007C32.2235 72.2112 36.7375 79.7302 43.4468 84.8973C48.5497 88.8341 54.8592 91.49 61.3431 91.642C68.3577 91.4828 75.067 88.2045 80.4897 83.9059C89.9758 76.3868 92.8179 63.4401 88.7618 52.281C84.6839 41.0494 73.148 32.6764 61.1541 32.4014C52.1115 32.6185 43.3887 37.8001 37.6025 44.4435V44.4363Z"
+                        fill="#E95128" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_278_16756">
+                        <rect width="121" height="124" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+
+            <div class="modal__form-close"></div>
+            <div class="modal__title">
+                Вы успешно зарегистрировались!
+            </div>
+            <p>Мы прислали ваши данные на электронную почту.</p>
+            <a href="#" class="btn btn-primary btn_form"> В личный кабинет</a>
+        </div>
+    </div>
+    <!-- конец окон модал -->
     <footer class="footer">
         <div class="footer__top-line">
 
@@ -2513,6 +2625,7 @@
 
 
     <script src="./scripts/header.js"></script>
+    <script src="./scripts/form.js"></script>
 </body>
 
 </html>
