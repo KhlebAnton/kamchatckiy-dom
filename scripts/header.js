@@ -106,9 +106,14 @@ searchInput.addEventListener('focus', () => {
 
 searchInput.addEventListener('blur', () => {
     startAnimation();
-    searchContent.classList.remove('open')
+    // searchContent.classList.remove('open')
 });
-
+document.addEventListener('click', (e)=> {
+    if (!searchContent.contains(e.target) && !searchLabel.contains(e.target)) {
+         searchContent.classList.remove('open')
+    }
+    
+})
 searchInput.addEventListener('input', function () {
     if (this.value.length > 0) {
         searchReset.classList.add('active');
@@ -263,6 +268,35 @@ categoryMobilItems.forEach(sub => {
 btnBackSubcategory.addEventListener('click', ()=> {
      subcategoryMenu.classList.remove('open')
 })
+
+
+// basket
+const basketContainer = document.querySelector('.basket__content');
+    
+    // Обработчик для всего контейнера корзины (делегирование событий)
+    basketContainer.addEventListener('click', function(e) {
+      const target = e.target;
+      
+      // Обработка кнопки "+"
+      if (target.classList.contains('product_counter__plus')) {
+        const counter = target.closest('.prouct_counter').querySelector('.product_counter__count');
+        counter.textContent = parseInt(counter.textContent) + 1;
+    
+      }
+      
+      // Обработка кнопки "-"
+      if (target.classList.contains('product_counter__minus')) {
+        const counter = target.closest('.prouct_counter').querySelector('.product_counter__count');
+        const currentValue = parseInt(counter.textContent);
+        
+        if (currentValue > 1) {
+          counter.textContent = currentValue - 1;
+         
+        } 
+      }
+    });
+    
+  
 
 document.addEventListener('DOMContentLoaded', () => {
     startAnimation();
