@@ -2091,13 +2091,17 @@ a.header__catalog-category_mobile__item::after {
     opacity: 0;
     transition: .3s;
 }
-
+.modal form {
+    display: none;
+}
 .modal.open {
     backdrop-filter: blur(15px);
     opacity: 1;
     pointer-events: all;
 }
-
+.modal.open form {
+    display: block;
+}
 .modal.open .modal__content {
     opacity: 1;
     transform: translateY(0);
