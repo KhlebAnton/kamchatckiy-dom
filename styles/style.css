@@ -447,6 +447,8 @@ input {
     border-radius: 32px;
     border: 1px solid var(--border);
     transition: .2s;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .btn_header:hover {
@@ -1210,6 +1212,8 @@ input {
     height: 40px;
     border: 1px solid var(--border);
     padding: 0 20px;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .btn_catalog_mobile {
@@ -1218,6 +1222,9 @@ input {
     border: none;
     color: var(--white);
     justify-content: space-between;
+    font-size: 14px;
+    line-height: 100%;
+    font-weight: 500;
 }
 
 .btn_catalog_mobile::after {
