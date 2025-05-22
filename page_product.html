@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/swiper-bundle.min.css">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
@@ -2094,12 +2095,134 @@
                 </li>
                 <li>
                     <a href="#">
-                      Нерка солено-мороженая (пряная) филе на коже
+                        Нерка солено-мороженая (пряная) филе на коже
                     </a>
                 </li>
             </ol>
         </nav>
-       
+        <section class="section section__card_product_page">
+            <div class="section__card_product_page__content container">
+                <div class="card_product_page__img_wrapper">
+                    <div class="card-product_page_swiper">
+                        <div class="card-product_page_swiper-prev"></div>
+                        <div class="card-product_page_swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="card-product__preview">
+                                        <img src="./img/product/honey.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card-product__preview">
+                                        <img src="./img/product/sirop.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card-product__preview">
+                                        <img src="./img/product/tea.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card-product__preview ">
+                                        <div class="video_icon"></div>
+                                        <video src="./video/banner.mp4"></video>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card-product__preview">
+                                        <img src="./img/product/tea.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card-product__preview">
+                                        <img src="./img/product/honey.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-product_page_swiper-next"></div>
+                    </div>
+
+                    <div class="product_card__media__wrapper">
+                        <div class="product_card__media">
+                            <img src="./img/product/honey.png" alt="">
+
+                        </div>
+                        <div class="card-product__top-hint">
+                            <div class="card-product_hint hint-rec">
+                                Рекомендуем
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="card-product__info_top">
+                    <h1 class="card-product__title_top">
+                        Нерка солено-мороженая (пряная) филе
+                        на коже
+                    </h1>
+                    <p class="card-product__stat">
+                        500 г
+                    </p>
+                    <div class="card-product__availability_wrapper">
+                        <div class="card-product__availability availability_true"></div>
+                        <div class="card-product__btn_favorites">
+                            <span>В избранное</span>
+                        </div>
+                    </div>
+                    <div class="card-product_page__price_wrapper">
+                        <div class="card-product_page__price">
+                            <span>750 ₽ / шт. </span>
+                            <!-- <span class="old-price">2 904 ₽ / кг.  </span> -->
+                        </div>
+                        <!-- <div class="card-product_page__price second_price">
+                             <span>750 ₽ / шт.  </span>
+                            <span class="old-price">2 904 ₽ / кг.  </span>
+                        </div> -->
+                    </div>
+                    <div class="card-product_page__counter-wrapper">
+                        <div class="card-product_page__counter">
+                            <div class="card-product_page__counter_minus"></div>
+                            <div class="card-product_page__counter_count">1</div>
+                            <div class="card-product_page__counter_plus"></div>
+
+                        </div>
+                        <!-- <div class="card-product_page__counter counter_mass">
+                            <div class="card-product_page__counter_minus"></div>
+                            <div class="card-product_page__counter_count">0.45</div>
+                            <div class="card-product_page__counter_plus"></div>
+
+                        </div> -->
+                        <div class="btn btn-primary btn_card_basket">В корзину</div>
+                        <!-- <div class="card-product_page__counter-hint">
+                            Товар весовой, итоговая стоимость упаковки может измениться после оформления заказа
+                        </div> -->
+
+                        
+                    </div>
+                    <div class="card-product_page__info">
+                            <div class="card-product_page__info_item">
+                                <div class="card-product_page__info_item-title">
+                                    Описание
+                                </div>
+                                <p>
+                                    Филе нерки с пряностями, солено мороженая на коже
+                                </p>
+                            </div>
+                            <div class="card-product_page__info_item">
+                                <div class="card-product_page__info_item-title">
+                                    Состав
+                                </div>
+                                <p>
+                                    Филе кеты, филе нерки, лук репчатый, лук зеленый, картофель, чеснок, соль, перец
+                                    черный молотый
+                                </p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- начало окон модальных -->
     <div class="modal modal-auth">
@@ -2461,6 +2584,9 @@
 
     <script src="./scripts/header.js"></script>
     <script src="./scripts/form.js"></script>
+
+    <script src="./scripts/swiper-bundle.min.js"></script>
+    <script src="./scripts/product.js"></script>
 
 
 </body>
