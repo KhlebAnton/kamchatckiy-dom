@@ -2089,8 +2089,587 @@
                 </li>
             </ol>
         </nav>
-        <section>
-            adasdasdasd
+        <section class="section section_catalog">
+            <div class="catalog__content container">
+                <div class="catalog__info">
+                    <h1 class="catalog_title">
+                        Рыба
+                    </h1>
+                    <div class="catalog__count">
+                        48 товаров
+                    </div>
+                </div>
+                <div class="catalog__top">
+                    <div class="catalog__category">
+                        <a href="#" class="catalog__category__item">Слабосоленая</a>
+                        <a href="#" class="catalog__category__item">Вяленая</a>
+                        <a href="#" class="catalog__category__item">Свежемороженая</a>
+                        <a href="#" class="catalog__category__item">Холодное и горячее копчение</a>
+                    </div>
+                    <div class="catalog__btn_filters">
+                        <div class="btn_filter_mobile"> Фильтры</div>
+                        <div class="sort-dropdown ">
+                            <div class="btn sort-dropdown-btn">
+                                По популярности
+                            </div>
+                            <div class="sort-dropdown-content">
+                                <div class="sort-dropdown__item">По популярности</div>
+                                <div class="sort-dropdown__item">Сначала недорогие</div>
+                                <div class="sort-dropdown__item">Сначала дорогие</div>
+                                <div class="sort-dropdown__item">По алфавиту</div>
+                                <div class="sort-dropdown__item">По новизне</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="catalog__container">
+                    <div class="catalog__filter">
+                        <div class="filter__top">
+                            <div class="filter_top__title">Фильтры</div>
+                            <div class="filter__close"></div>
+                        </div>
+                        <div class="filter__section open">
+                            <div class="filter__title">Цена</div>
+                            <div class="filter__hidden">
+                                <div class="price__inputs">
+                                    <input type="number" class="price__input" id="minPrice" placeholder="от" min="0"
+                                        max="10000">
+                                    <input type="number" class="price__input" id="maxPrice" placeholder="до" min="0"
+                                        max="10000">
+                                </div>
+                                <div class="price__range">
+                                    <div class="price__range-track"></div>
+                                    <div class="price__range-progress" id="priceProgress"></div>
+                                    <input type="range" class="price__range-input" id="rangeMin" min="0" max="10000"
+                                        value="0" step="100">
+                                    <input type="range" class="price__range-input" id="rangeMax" min="0" max="10000"
+                                        value="5000" step="100">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="filter__section open">
+                            <div class="filter__title">Упаковка</div>
+                            <div class="filter__hidden">
+                                <div class="filter__options">
+
+                                    <label class="filter__option__label">
+
+                                        <input type="checkbox" value="vacuum">
+                                        <div class="checkbox-marker"></div>
+                                        <span>Вакуумная</span>
+
+                                    </label>
+                                    <label class="filter__option__label">
+
+                                        <input type="checkbox" value="vacuum2">
+                                        <div class="checkbox-marker"></div>
+                                        <span>Дополнительный параметр</span>
+
+                                    </label>
+                                    <label class="filter__option__label">
+
+                                        <input type="checkbox" value="vacuum3">
+                                        <div class="checkbox-marker"></div>
+                                        <span>Дополнительный параметр</span>
+
+                                    </label>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="filter__section">
+                            <div class="filter__title">Продукт</div>
+                            <div class="filter__hidden">
+                                <div class="filter__options">
+                                    <label class="filter__option__label">
+                                        <input type="checkbox" value="production">
+                                        <div class="checkbox-marker"></div>
+                                        <span>Производство</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="filter__section">
+                            <div class="filter__title">Производство</div>
+                            <div class="filter__hidden">
+                                <div class="filter__options">
+                                    <label class="filter__option__label">
+                                        <input type="checkbox" value="param1">
+                                        <div class="checkbox-marker"></div>
+                                        <span>Параметр 1</span>
+                                    </label>
+                                    <label class="filter__option__label">
+                                        <input type="checkbox" value="param2">
+                                        <div class="checkbox-marker"></div>
+                                        <span>Параметр 2</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="filter__buttons">
+                            <button class="filter__button filter__button--apply">Показать</button>
+                            <button class="filter__button filter__button--reset">Сбросить</button>
+                        </div>
+                    </div>
+                    <div class="catalog__products">
+                        <div class="card-product">
+                            <div class="card-product__like"></div>
+                            <div class="card-product__top-hint">
+                                <div class="card-product_hint hint-rec">
+                                    Рекомендуем
+                                </div>
+                            </div>
+                            <a href="#" class="card-product__img">
+                                <img src="./img/product/ugol.png" alt="">
+                            </a>
+                            <div class="card-product__info">
+                                <div class="card-product__top">
+                                    <a href="#" class="card-product__title">
+                                       Угольная рыба, стейки, 500 гр.
+                                    </a>
+                                    <div class="card-product__stat">500 гр.</div>
+                                    <div class="card-product__price_group">
+                                        <div class="card-product__price">1 980 ₽ / шт. </div>
+                                        <div class="card-product__price_old"></div>
+                                    </div>
+                                </div>
+                                <div class="card-product__btn-group">
+                                    <div class="btn btn-primary btn_card_basket">В корзину</div>
+                                    <div class="btn btn-primary btn_card_basket_counter">
+                                        <div class="btn_card_basket_counter_minus">
+
+                                        </div>
+                                        <div class="btn_card_basket_counter_count">
+                                            1
+                                        </div>
+                                        <div class="btn_card_basket_counter_plus">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-product">
+                            <div class="card-product__like"></div>
+                            <div class="card-product__top-hint">
+                               
+                            </div>
+                            <a href="#" class="card-product__img">
+                                <img src="./img/product/nerka.png" alt="">
+                            </a>
+                            <div class="card-product__info">
+                                <div class="card-product__top">
+                                    <a href="#" class="card-product__title">
+                                       Нерка подкопченная ломтики 150 гр, Камчатка
+                                    </a>
+                                    <div class="card-product__stat">150 гр.</div>
+                                    <div class="card-product__price_group">
+                                        <div class="card-product__price">540 ₽ / уп. </div>
+                                        <div class="card-product__price_old"></div>
+                                    </div>
+                                </div>
+                                <div class="card-product__btn-group">
+                                    <div class="btn btn-primary btn_card_basket">В корзину</div>
+                                    <div class="btn btn-primary btn_card_basket_counter">
+                                        <div class="btn_card_basket_counter_minus">
+
+                                        </div>
+                                        <div class="btn_card_basket_counter_count">
+                                            1
+                                        </div>
+                                        <div class="btn_card_basket_counter_plus">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-product">
+                            <div class="card-product__like"></div>
+                            <div class="card-product__top-hint">
+                                <div class="card-product_hint hint-new">
+                                   Новинка
+                                </div>
+                            </div>
+                            <a href="#" class="card-product__img">
+                                <img src="./img/product/stake.png" alt="">
+                            </a>
+                            <div class="card-product__info">
+                                <div class="card-product__top">
+                                    <a href="#" class="card-product__title">
+                                      Угольная рыба, стейки, 500 гр.
+                                    </a>
+                                    <div class="card-product__stat">500 гр.</div>
+                                    <div class="card-product__price_group">
+                                        <div class="card-product__price">2 429 ₽ / шт. </div>
+                                        <div class="card-product__price_old"></div>
+                                    </div>
+                                </div>
+                                <div class="card-product__btn-group">
+                                    <div class="btn btn-primary btn_card_basket">В корзину</div>
+                                    <div class="btn btn-primary btn_card_basket_counter">
+                                        <div class="btn_card_basket_counter_minus">
+
+                                        </div>
+                                        <div class="btn_card_basket_counter_count">
+                                            1
+                                        </div>
+                                        <div class="btn_card_basket_counter_plus">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-product">
+                            <div class="card-product__like"></div>
+                            <div class="card-product__top-hint">
+                               
+                            </div>
+                            <a href="#" class="card-product__img">
+                                <img src="./img/product/nerka2.png" alt="">
+                            </a>
+                            <div class="card-product__info">
+                                <div class="card-product__top">
+                                    <a href="#" class="card-product__title">
+                                        Нерка ломтики по-камчатски подкопченные маринованные с лу...
+                                    </a>
+                                    <div class="card-product__stat">180 гр.</div>
+                                    <div class="card-product__price_group">
+                                        <div class="card-product__price">600 ₽ / шт. </div>
+                                        <div class="card-product__price_old"></div>
+                                    </div>
+                                </div>
+                                <div class="card-product__btn-group">
+                                    <div class="btn btn-primary btn_card_basket">В корзину</div>
+                                    <div class="btn btn-primary btn_card_basket_counter">
+                                        <div class="btn_card_basket_counter_minus">
+
+                                        </div>
+                                        <div class="btn_card_basket_counter_count">
+                                            1
+                                        </div>
+                                        <div class="btn_card_basket_counter_plus">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-product">
+                            <div class="card-product__like"></div>
+                            <div class="card-product__top-hint">
+                                <div class="card-product_hint hint-new">
+                                 Новинка
+                                </div>
+                            </div>
+                            <a href="#" class="card-product__img">
+                                <img src="./img/product/tushka.png" alt="">
+                            </a>
+                            <div class="card-product__info">
+                                <div class="card-product__top">
+                                    <a href="#" class="card-product__title">
+                                       Нерка тушка потрошеная без головы, кг
+                                    </a>
+                                    <div class="card-product__stat">2500 гр.</div>
+                                    <div class="card-product__price_group">
+                                        <div class="card-product__price">2500 гр.</div>
+                                        <div class="card-product__price_old"></div>
+                                    </div>
+                                </div>
+                                <div class="card-product__btn-group">
+                                    <div class="btn btn-primary btn_card_basket">В корзину</div>
+                                    <div class="btn btn-primary btn_card_basket_counter">
+                                        <div class="btn_card_basket_counter_minus">
+
+                                        </div>
+                                        <div class="btn_card_basket_counter_count">
+                                            1
+                                        </div>
+                                        <div class="btn_card_basket_counter_plus">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-product">
+                            <div class="card-product__like"></div>
+                            <div class="card-product__top-hint">
+                                <div class="card-product_hint hint-rec">
+                                    Рекомендуем
+                                </div>
+                            </div>
+                            <a href="#" class="card-product__img">
+                                <img src="./img/product/tushka2.png" alt="">
+                            </a>
+                            <div class="card-product__info">
+                                <div class="card-product__top">
+                                    <a href="#" class="card-product__title">
+                                       Сёмга атлантическая тушка потрошеная с головой (6-7 кг)
+                                    </a>
+                                    <div class="card-product__stat">6500 гр.</div>
+                                    <div class="card-product__price_group">
+                                        <div class="card-product__price">18 720 ₽ / кг.</div>
+                                        <div class="card-product__price_old"></div>
+                                    </div>
+                                </div>
+                                <div class="card-product__btn-group">
+                                    <div class="btn btn-primary btn_card_basket">В корзину</div>
+                                    <div class="btn btn-primary btn_card_basket_counter">
+                                        <div class="btn_card_basket_counter_minus">
+
+                                        </div>
+                                        <div class="btn_card_basket_counter_count">
+                                            1
+                                        </div>
+                                        <div class="btn_card_basket_counter_plus">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-product">
+                            <div class="card-product__like"></div>
+                            <div class="card-product__top-hint">
+                                <div class="card-product_hint hint-rec">
+                                    Рекомендуем
+                                </div>
+                            </div>
+                            <a href="#" class="card-product__img">
+                                <img src="./img/product/ugol.png" alt="">
+                            </a>
+                            <div class="card-product__info">
+                                <div class="card-product__top">
+                                    <a href="#" class="card-product__title">
+                                       Угольная рыба, стейки, 500 гр.
+                                    </a>
+                                    <div class="card-product__stat">500 гр.</div>
+                                    <div class="card-product__price_group">
+                                        <div class="card-product__price">1 980 ₽ / шт. </div>
+                                        <div class="card-product__price_old"></div>
+                                    </div>
+                                </div>
+                                <div class="card-product__btn-group">
+                                    <div class="btn btn-primary btn_card_basket">В корзину</div>
+                                    <div class="btn btn-primary btn_card_basket_counter">
+                                        <div class="btn_card_basket_counter_minus">
+
+                                        </div>
+                                        <div class="btn_card_basket_counter_count">
+                                            1
+                                        </div>
+                                        <div class="btn_card_basket_counter_plus">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-product">
+                            <div class="card-product__like"></div>
+                            <div class="card-product__top-hint">
+                               
+                            </div>
+                            <a href="#" class="card-product__img">
+                                <img src="./img/product/nerka.png" alt="">
+                            </a>
+                            <div class="card-product__info">
+                                <div class="card-product__top">
+                                    <a href="#" class="card-product__title">
+                                       Нерка подкопченная ломтики 150 гр, Камчатка
+                                    </a>
+                                    <div class="card-product__stat">150 гр.</div>
+                                    <div class="card-product__price_group">
+                                        <div class="card-product__price">540 ₽ / уп. </div>
+                                        <div class="card-product__price_old"></div>
+                                    </div>
+                                </div>
+                                <div class="card-product__btn-group">
+                                    <div class="btn btn-primary btn_card_basket">В корзину</div>
+                                    <div class="btn btn-primary btn_card_basket_counter">
+                                        <div class="btn_card_basket_counter_minus">
+
+                                        </div>
+                                        <div class="btn_card_basket_counter_count">
+                                            1
+                                        </div>
+                                        <div class="btn_card_basket_counter_plus">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-product">
+                            <div class="card-product__like"></div>
+                            <div class="card-product__top-hint">
+                                <div class="card-product_hint hint-new">
+                                   Новинка
+                                </div>
+                            </div>
+                            <a href="#" class="card-product__img">
+                                <img src="./img/product/stake.png" alt="">
+                            </a>
+                            <div class="card-product__info">
+                                <div class="card-product__top">
+                                    <a href="#" class="card-product__title">
+                                      Угольная рыба, стейки, 500 гр.
+                                    </a>
+                                    <div class="card-product__stat">500 гр.</div>
+                                    <div class="card-product__price_group">
+                                        <div class="card-product__price">2 429 ₽ / шт. </div>
+                                        <div class="card-product__price_old"></div>
+                                    </div>
+                                </div>
+                                <div class="card-product__btn-group">
+                                    <div class="btn btn-primary btn_card_basket">В корзину</div>
+                                    <div class="btn btn-primary btn_card_basket_counter">
+                                        <div class="btn_card_basket_counter_minus">
+
+                                        </div>
+                                        <div class="btn_card_basket_counter_count">
+                                            1
+                                        </div>
+                                        <div class="btn_card_basket_counter_plus">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-product">
+                            <div class="card-product__like"></div>
+                            <div class="card-product__top-hint">
+                               
+                            </div>
+                            <a href="#" class="card-product__img">
+                                <img src="./img/product/nerka2.png" alt="">
+                            </a>
+                            <div class="card-product__info">
+                                <div class="card-product__top">
+                                    <a href="#" class="card-product__title">
+                                        Нерка ломтики по-камчатски подкопченные маринованные с лу...
+                                    </a>
+                                    <div class="card-product__stat">180 гр.</div>
+                                    <div class="card-product__price_group">
+                                        <div class="card-product__price">600 ₽ / шт. </div>
+                                        <div class="card-product__price_old"></div>
+                                    </div>
+                                </div>
+                                <div class="card-product__btn-group">
+                                    <div class="btn btn-primary btn_card_basket">В корзину</div>
+                                    <div class="btn btn-primary btn_card_basket_counter">
+                                        <div class="btn_card_basket_counter_minus">
+
+                                        </div>
+                                        <div class="btn_card_basket_counter_count">
+                                            1
+                                        </div>
+                                        <div class="btn_card_basket_counter_plus">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-product">
+                            <div class="card-product__like"></div>
+                            <div class="card-product__top-hint">
+                                <div class="card-product_hint hint-new">
+                                 Новинка
+                                </div>
+                            </div>
+                            <a href="#" class="card-product__img">
+                                <img src="./img/product/tushka.png" alt="">
+                            </a>
+                            <div class="card-product__info">
+                                <div class="card-product__top">
+                                    <a href="#" class="card-product__title">
+                                       Нерка тушка потрошеная без головы, кг
+                                    </a>
+                                    <div class="card-product__stat">2500 гр.</div>
+                                    <div class="card-product__price_group">
+                                        <div class="card-product__price">2500 гр.</div>
+                                        <div class="card-product__price_old"></div>
+                                    </div>
+                                </div>
+                                <div class="card-product__btn-group">
+                                    <div class="btn btn-primary btn_card_basket">В корзину</div>
+                                    <div class="btn btn-primary btn_card_basket_counter">
+                                        <div class="btn_card_basket_counter_minus">
+
+                                        </div>
+                                        <div class="btn_card_basket_counter_count">
+                                            1
+                                        </div>
+                                        <div class="btn_card_basket_counter_plus">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-product">
+                            <div class="card-product__like"></div>
+                            <div class="card-product__top-hint">
+                                <div class="card-product_hint hint-rec">
+                                    Рекомендуем
+                                </div>
+                            </div>
+                            <a href="#" class="card-product__img">
+                                <img src="./img/product/tushka2.png" alt="">
+                            </a>
+                            <div class="card-product__info">
+                                <div class="card-product__top">
+                                    <a href="#" class="card-product__title">
+                                       Сёмга атлантическая тушка потрошеная с головой (6-7 кг)
+                                    </a>
+                                    <div class="card-product__stat">6500 гр.</div>
+                                    <div class="card-product__price_group">
+                                        <div class="card-product__price">18 720 ₽ / кг.</div>
+                                        <div class="card-product__price_old"></div>
+                                    </div>
+                                </div>
+                                <div class="card-product__btn-group">
+                                    <div class="btn btn-primary btn_card_basket">В корзину</div>
+                                    <div class="btn btn-primary btn_card_basket_counter">
+                                        <div class="btn_card_basket_counter_minus">
+
+                                        </div>
+                                        <div class="btn_card_basket_counter_count">
+                                            1
+                                        </div>
+                                        <div class="btn_card_basket_counter_plus">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__bottom">
+                        <div class="btn btn_more">Показать еще</div>
+                        <div class="catalog__pages">
+                            <div class="catalog__pages_prev"></div>
+                            <div class="catalog__pages_count count_active">1</div>
+                            <div class="catalog__pages_count">2</div>
+                            <div class="catalog__pages_count">3</div>
+                            <div class="catalog__pages_next"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </main>
     <!-- начало окон модальных -->
@@ -2453,6 +3032,9 @@
 
     <script src="./scripts/header.js"></script>
     <script src="./scripts/form.js"></script>
+
+    <script src="./scripts/catalog.js"></script>
+    <script src="./scripts/product-counter.js"></script>
 </body>
 
 </html>
