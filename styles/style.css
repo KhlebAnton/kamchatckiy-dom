@@ -3543,9 +3543,7 @@ a.header__catalog-category_mobile__item::after {
     }
 
     .about__item .about__item-img_bg img {
-        width: 100%;
         height: 100%;
-        object-fit: contain;
     }
 
     .about__item .about__item__content {
