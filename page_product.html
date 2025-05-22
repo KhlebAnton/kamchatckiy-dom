@@ -1,0 +1,2468 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <!-- тут все для хедера -->
+    <header class="header">
+        <div class="header__content container">
+            <a href="#" class="header-logo_wrapper">
+                <img class="header-logo__img" src="./img/logo.svg" alt="Логотип">
+            </a>
+            <div class="header__nav">
+                <div class="header__nav_top">
+                    <div class="btn btn_catalog mobile_hidden">
+                        <span>Каталог товаров</span>
+                    </div>
+                    <div class="search-wrapper">
+                        <label class="label_search">
+                            <input autocomplete="off" type="text" placeholder="Найти" id="search-input">
+                            <button class="search-btn" type="button" id="search-btn"></button>
+                            <button class="search-reset" type="button" id="search-reset"></button>
+                        </label>
+                        <div class="search-content">
+                            <div class="search-content__history">
+                                <div class="search-content__title">Вы искали</div>
+                                <div class="search-content__history-item__list">
+                                    <div class="search-content__history-item">
+                                        <a href="#">Свежемороженая рыба</a>
+                                        <div class="search-content__history-item__close"></div>
+                                    </div>
+
+                                    <div class="search-content__history-item">
+                                        <a href="#">Икра нерки</a>
+                                        <div class="search-content__history-item__close"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-content__advice">
+                                <div class="search-content__title">Рекомендуем</div>
+                                <div class="search-content__history__advice">
+                                    <div class="search-content__card-product">
+                                        <a href="#" class="search-content__card-product-img_wrapper">
+                                            <img class="search-content__card-product-img"
+                                                src="./img/header-catalog/cotleta.png" alt="">
+                                        </a>
+                                        <div class="search-content__card-product-info">
+                                            <a href="#" class="search-content__card-product__title">
+                                                Тельное рыбное «Камчатское»
+                                            </a>
+                                            <div class="search-content__card-product__stat">
+                                                500 гр.
+                                            </div>
+                                            <div class="search-content__card-product__price">
+                                                1 980 ₽ / шт.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="search-content__card-product">
+                                        <a href="#" class="search-content__card-product-img_wrapper">
+                                            <img class="search-content__card-product-img"
+                                                src="./img/header-catalog/cotleta.png" alt="">
+                                        </a>
+                                        <div class="search-content__card-product-info">
+                                            <a href="#" class="search-content__card-product__title">
+                                                Тельное рыбное «Камчатское»
+                                            </a>
+                                            <div class="search-content__card-product__stat">
+                                                500 гр.
+                                            </div>
+                                            <div class="search-content__card-product__price">
+                                                1 980 ₽ / шт.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="search-content__card-product">
+                                        <a href="#" class="search-content__card-product-img_wrapper">
+                                            <img class="search-content__card-product-img"
+                                                src="./img/header-catalog/nerka.png" alt="">
+                                        </a>
+                                        <div class="search-content__card-product-info">
+                                            <a href="#" class="search-content__card-product__title">
+                                                Нерка подкопченная ломтики 150 гр, Камчатка
+                                            </a>
+                                            <div class="search-content__card-product__stat">
+                                                500 гр.
+                                            </div>
+                                            <div class="search-content__card-product__price">
+                                                1 980 ₽ / шт.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="search-content__card-product">
+                                        <a href="#" class="search-content__card-product-img_wrapper">
+                                            <img class="search-content__card-product-img"
+                                                src="./img/header-catalog/cotleta.png" alt="">
+                                        </a>
+                                        <div class="search-content__card-product-info">
+                                            <a href="#" class="search-content__card-product__title">
+                                                Тельное рыбное «Камчатское»
+                                            </a>
+                                            <div class="search-content__card-product__stat">
+                                                500 гр.
+                                            </div>
+                                            <div class="search-content__card-product__price">
+                                                1 980 ₽ / шт.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn btn_header btn_search">
+                        <svg class="btn_header_img" width="24" height="24" viewBox="0 0 16 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.77843 11.5556C10.233 11.5556 12.2229 9.56571 12.2229 7.11111C12.2229 4.65651 10.233 2.66667 7.77843 2.66667C5.32383 2.66667 3.33398 4.65651 3.33398 7.11111C3.33398 9.56571 5.32383 11.5556 7.77843 11.5556Z"
+                                stroke="#163E71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M13.3336 12.6667L11.1113 10.4444" stroke="#163E71" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+
+                    </div>
+                    <div class="btn btn_header btn_account mobile_hidden">
+                        <svg class="btn_header_img" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="7" r="4" fill="#163E71" stroke="#163E71" stroke-width="1.5" />
+                            <path
+                                d="M16 21H8.00001C5.79087 21 3.84014 19.0616 4.99177 17.1763C6.11781 15.333 8.2972 14 12 14C15.7028 14 17.8822 15.333 19.0082 17.1763C20.1599 19.0616 18.2091 21 16 21Z"
+                                fill="#163E71" stroke="#163E71" stroke-width="1.5" />
+                        </svg>
+                    </div>
+                    <a href="#" class="btn btn_header btn_account_auth mobile_hidden">
+                        <svg class="btn_header_img" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="7" r="4" fill="#163E71" stroke="#163E71" stroke-width="1.5" />
+                            <path
+                                d="M16 21H8.00001C5.79087 21 3.84014 19.0616 4.99177 17.1763C6.11781 15.333 8.2972 14 12 14C15.7028 14 17.8822 15.333 19.0082 17.1763C20.1599 19.0616 18.2091 21 16 21Z"
+                                fill="#163E71" stroke="#163E71" stroke-width="1.5" />
+                        </svg>
+
+                        <span class="btn_account__name">
+                            Анна Б.
+                        </span>
+                    </a>
+                    <div class="btn btn_header btn-busket mobile_hidden">
+                        <svg class="btn_header_img" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17 20C17 19.4477 17.4477 19 18 19C18.5523 19 19 19.4477 19 20C19 20.5523 18.5523 21 18 21C17.4477 21 17 20.5523 17 20Z"
+                                stroke="#163E71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20Z"
+                                stroke="#163E71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M5.5 6.5H20.5L18.5 16H7L5.5 6.5Z" fill="#163E71" />
+                            <path
+                                d="M3 3H3.76772C4.24998 3 4.66354 3.3442 4.7511 3.81845L7 16H17.8968C18.3625 16 18.7665 15.6786 18.8712 15.2249L20.7173 7.22486C20.8619 6.59824 20.386 6 19.7429 6H12.6215H5.5"
+                                stroke="#163E71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <div class="count-busket">12</div>
+                        <div class="basket__content_wrapper">
+                            <div class="basket__content">
+                                <div class="basket__content-title">
+                                    <span>Корзина</span>
+                                    <span class="basket_count">3</span>
+                                </div>
+                                <div class="basket__content_card-items">
+                                    <div class="basket__content_card-item">
+                                        <div class="basket__content_card-item-img">
+                                            <img src="./img/product/tea.png" alt="">
+                                        </div>
+                                        <div class="basket__content_card-item__info">
+                                            <div class="basket__content_card-item__title">
+                                                Иван-чай «Сказочная Камчатка»
+                                            </div>
+                                            <div class="basket__content_card-item__stat">
+                                                35 гр.
+                                            </div>
+                                            <div class="basket__content_card-item__price_conteiner">
+                                                <div class="basket__content_card-item__price">450 ₽ / шт. </div>
+                                                <div class="prouct_counter">
+                                                    <div class="product_counter__minus"></div>
+                                                    <div class="product_counter__count">1</div>
+                                                    <div class="product_counter__plus"></div>
+                                                </div>
+                                            </div>
+                                            <div class="basket__content_card-item__price_hint">
+                                                Цена за 1 шт.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="basket__content_card-item">
+                                        <div class="basket__content_card-item-img">
+                                            <img src="./img/product/ikra.png" alt="">
+                                        </div>
+                                        <div class="basket__content_card-item__info">
+                                            <div class="basket__content_card-item__title">
+                                                Икра лососевая Кижуча весовая, 500 гр.
+                                            </div>
+                                            <div class="basket__content_card-item__stat">
+                                                500 гр.
+                                            </div>
+                                            <div class="basket__content_card-item__price_conteiner">
+                                                <div class="basket__content_card-item__price">6 750 ₽ / шт. </div>
+                                                <div class="prouct_counter">
+                                                    <div class="product_counter__minus"></div>
+                                                    <div class="product_counter__count">1</div>
+                                                    <div class="product_counter__plus"></div>
+                                                </div>
+                                            </div>
+                                            <div class="basket__content_card-item__price_hint">
+                                                Цена за 1 шт.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="basket__content_card-item">
+                                        <div class="basket__content_card-item-img">
+                                            <img src="./img/product/tea.png" alt="">
+                                        </div>
+                                        <div class="basket__content_card-item__info">
+                                            <div class="basket__content_card-item__title">
+                                                Иван-чай «Сказочная Камчатка»
+                                            </div>
+                                            <div class="basket__content_card-item__stat">
+                                                35 гр.
+                                            </div>
+                                            <div class="basket__content_card-item__price_conteiner">
+                                                <div class="basket__content_card-item__price">450 ₽ / шт. </div>
+                                                <div class="prouct_counter">
+                                                    <div class="product_counter__minus"></div>
+                                                    <div class="product_counter__count">1</div>
+                                                    <div class="product_counter__plus"></div>
+                                                </div>
+                                            </div>
+                                            <div class="basket__content_card-item__price_hint">
+                                                Цена за 1 шт.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="basket__content__bottom">
+                                    <div class="basket_all-price-wrapper">
+                                        <span>Итого</span>
+                                        <span class="basket_all-price">8 040 ₽</span>
+                                    </div>
+                                    <a href="#" class="btn btn-primary">В корзину</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn_header btn-busket_mobile_visible">
+                        <svg class="btn_header_img" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17 20C17 19.4477 17.4477 19 18 19C18.5523 19 19 19.4477 19 20C19 20.5523 18.5523 21 18 21C17.4477 21 17 20.5523 17 20Z"
+                                stroke="#163E71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20Z"
+                                stroke="#163E71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M5.5 6.5H20.5L18.5 16H7L5.5 6.5Z" fill="#163E71" />
+                            <path
+                                d="M3 3H3.76772C4.24998 3 4.66354 3.3442 4.7511 3.81845L7 16H17.8968C18.3625 16 18.7665 15.6786 18.8712 15.2249L20.7173 7.22486C20.8619 6.59824 20.386 6 19.7429 6H12.6215H5.5"
+                                stroke="#163E71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <div class="count-busket">12</div>
+
+                    </a>
+                    <div class="btn btn_header btn_favourit">
+                        <svg class="btn_header_img" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 20C12 20 3 14.9875 3 8.97234C3 2.95722 10 2.45597 12 7.16221C14 2.45597 21 2.95722 21 8.97234C21 14.9875 12 20 12 20Z"
+                                fill="#163E71" />
+                        </svg>
+
+                    </div>
+                    <a class="btn header__tel" href="tel:+79255175885">8 (925) 517-58-85</a>
+                    <div class="header__social-links">
+                        <a class="social-link" href="#">
+                            <svg class="social-link_img" width="23" height="13" viewBox="0 0 23 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.0859 7.45459C18.7141 6.99956 18.8204 6.79716 19.0859 6.39044C19.0907 6.38576 22.1603 2.27591 22.4766 0.882115L22.4785 0.881179C22.6356 0.373286 22.4785 0 21.7185 0H19.2037C18.5636 0 18.2684 0.320335 18.1102 0.67878C18.1102 0.67878 16.8299 3.64836 15.0186 5.57327C14.434 6.12948 14.1637 6.30776 13.8446 6.30776C13.6874 6.30776 13.443 6.12948 13.443 5.62158V0.881179C13.443 0.272064 13.2638 0 12.7338 0H8.77959C8.37804 0 8.13939 0.284143 8.13939 0.548764C8.13939 1.12632 9.04507 1.25915 9.139 2.88413V6.40992C9.139 7.18248 8.99428 7.32457 8.67324 7.32457C7.81834 7.32457 5.74348 4.34292 4.51391 0.93043C4.26569 0.26832 4.02322 0.000891366 3.37824 0.000891366H0.86253C0.144713 0.000891366 0 0.321271 0 0.679716C0 1.31299 0.854862 4.46179 3.97531 8.62178C6.05496 11.4613 8.98375 13 11.648 13C13.2494 13 13.4449 12.6583 13.4449 12.0705C13.4449 9.35721 13.3002 9.10093 14.1023 9.10093C14.4742 9.10093 15.1144 9.27921 16.6094 10.6489C18.3182 12.2729 18.599 13 19.5555 13H22.0702C22.7871 13 23.1503 12.6583 22.9414 11.9842C22.4631 10.5662 19.2316 7.64959 19.0859 7.45459Z"
+                                    fill="#5873B6" />
+                            </svg>
+
+                        </a>
+                        <a class="social-link" href="#">
+                            <svg class="social-link_img" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.00227 0H8.99773C4.03538 0 0 4.0365 0 9C0 10.9688 0.6345 12.7935 1.71338 14.2751L0.59175 17.6186L4.05112 16.5128C5.47427 17.4555 7.17188 18 9.00227 18C13.9646 18 18 13.9624 18 9C18 4.03762 13.9646 0 9.00227 0ZM14.2391 12.7091C14.022 13.3222 13.1603 13.8308 12.4729 13.9792C12.0026 14.0794 11.3884 14.1593 9.32062 13.302C6.67573 12.2062 4.9725 9.51862 4.83977 9.34423C4.71262 9.16988 3.771 7.92112 3.771 6.62962C3.771 5.33812 4.42688 4.70927 4.69123 4.43927C4.90838 4.21762 5.26723 4.11638 5.6115 4.11638C5.72288 4.11638 5.823 4.122 5.913 4.1265C6.17738 4.13773 6.31012 4.1535 6.4845 4.57088C6.70162 5.094 7.23038 6.3855 7.29338 6.51827C7.3575 6.651 7.42162 6.831 7.33162 7.00538C7.24727 7.18538 7.173 7.26523 7.04023 7.41823C6.9075 7.57123 6.7815 7.68827 6.64877 7.8525C6.52727 7.99538 6.39 8.14838 6.543 8.41273C6.696 8.6715 7.22477 9.53438 8.00323 10.2274C9.00788 11.1217 9.82238 11.4075 10.1138 11.529C10.3309 11.619 10.5896 11.5976 10.7482 11.4289C10.9496 11.2118 11.1982 10.8518 11.4514 10.4974C11.6314 10.2431 11.8586 10.2116 12.0971 10.3016C12.3401 10.386 13.626 11.0216 13.8904 11.1532C14.1547 11.286 14.3291 11.349 14.3933 11.4604C14.4562 11.5717 14.4562 12.0949 14.2391 12.7091Z"
+                                    fill="#5873B6" />
+                            </svg>
+
+                        </a>
+                        <a class="social-link" href="#">
+                            <svg class="social-link_img" width="22" height="18" viewBox="0 0 22 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.63261 11.8632L8.2687 16.8888C8.78938 16.8888 9.01488 16.6692 9.28529 16.4055L11.7264 14.115L16.7847 17.7519C17.7124 18.2595 18.366 17.9922 18.6163 16.914L21.9365 1.63925L21.9374 1.63835C22.2317 0.291965 21.4415 -0.234535 20.5377 0.0957649L1.02135 7.43163C-0.310592 7.93923 -0.290429 8.66823 0.794931 8.99853L5.78447 10.5222L17.3742 3.40233C17.9196 3.04773 18.4155 3.24393 18.0076 3.59853L8.63261 11.8632Z"
+                                    fill="#5873B6" />
+                            </svg>
+
+                        </a>
+                    </div>
+                    <div class="btn btn_header btn-menu"></div>
+                </div>
+                <div class="header__nav_bottom">
+                    <nav class="nav" aria-label="Навигация в шапке">
+                        <ol class="header__nav-list">
+                            <li>
+                                <a class="nav_item" href="#">
+                                    Ресторан
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav_item" href="#">
+                                    Мероприятия
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav_item" href="#">
+                                    Бонусная программа
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav_item" href="#">
+                                    Оплата и доставка
+                                </a>
+                            </li>
+                            <li class="nav_item-hidden" data-hidden="2">
+                                <a class="nav_item" href="#">
+                                    Производство
+                                </a>
+                            </li>
+                            <li class="nav_item-hidden" data-hidden="1">
+                                <a class="nav_item" href="#">
+                                    Журнал
+                                </a>
+                            </li>
+                            <li class="nav_item-hidden" data-hidden="1">
+                                <a class="nav_item" href="#">
+                                    Вакансии
+                                </a>
+                            </li>
+                            <li>
+                                <div class="nav_item nav_item_dropdown ">
+                                    <span>Еще</span>
+                                    <svg class="nav_item_dropdown-img" width="14" height="8" viewBox="0 0 14 8"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 7L13 1" stroke="#5B5B5B" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <div class="dropdown__hidden">
+                                        <ol class="dropdown__nav-list">
+                                            <li>
+                                                <a class="dropdown__nav_item" href="#">
+                                                    Контакты
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown__nav_item" href="#">
+                                                    Отзывы
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown__nav_item" href="#">
+                                                    Оптовикам
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown__nav_item" href="#">
+                                                    Оплата и доставка
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown__nav_item" href="#">
+                                                    Бренды
+                                                </a>
+                                            </li>
+                                            <li class="dropdown__nav_item_hidden" data-hidden="1">
+                                                <a class="dropdown__nav_item" href="#">
+                                                    Вакансии
+                                                </a>
+                                            </li>
+                                            <li class="dropdown__nav_item_hidden" data-hidden="1">
+                                                <a class="dropdown__nav_item" href="#">
+                                                    Журнал
+                                                </a>
+                                            </li>
+                                            <li class="dropdown__nav_item_hidden" data-hidden="2">
+                                                <a class="dropdown__nav_item" href="#">
+                                                    Производство
+                                                </a>
+                                            </li>
+
+                                        </ol>
+                                    </div>
+                                </div>
+
+                            </li>
+                        </ol>
+                        <ol class="header__nav-list_spec">
+                            <li>
+                                <a class="nav_item_scpec" href="#">
+                                    <svg class="nav_item_scpec-img" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 5L5 19" stroke="#163E71" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M7 10C8.65685 10 10 8.65685 10 7C10 5.34315 8.65685 4 7 4C5.34315 4 4 5.34315 4 7C4 8.65685 5.34315 10 7 10Z"
+                                            stroke="#163E71" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M17 20C18.6569 20 20 18.6569 20 17C20 15.3431 18.6569 14 17 14C15.3431 14 14 15.3431 14 17C14 18.6569 15.3431 20 17 20Z"
+                                            stroke="#163E71" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+
+                                    <span>Акции</span></a>
+                            </li>
+                            <li>
+                                <a class="nav_item_scpec" href="#">
+                                    <svg class="nav_item_scpec-img" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19 4H5C4.44772 4 4 4.44772 4 5V19C4 19.5523 4.44772 20 5 20H19C19.5523 20 20 19.5523 20 19V5C20 4.44772 19.5523 4 19 4Z"
+                                            stroke="#163E71" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M12 11H16" stroke="#163E71" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M12 8H16" stroke="#163E71" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M8 20L8 4" stroke="#163E71" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                    <span>Рецепты</span>
+                                </a>
+                            </li>
+                        </ol>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <div class="header__catalog">
+        <div class="header__catalog_wrapper">
+            <div class="header__catalog_content container">
+                <div class="header__catalog-category">
+                    <a href="#" class="header__catalog-category__item" data-category="Икра">
+                        Икра
+                    </a>
+                    <a href="#" class="header__catalog-category__item" data-category="Рыба">
+                        Рыба
+                    </a>
+                    <a href="#" class="header__catalog-category__item" data-category="Консервы">
+                        Консервы
+                    </a>
+                    <a href="#" class="header__catalog-category__item" data-category="Дикоросы">
+                        Дикоросы
+                    </a>
+                    <a href="#" class="header__catalog-category__item" data-category="Колбасы и мясо">
+                        Колбасы и мясо
+                    </a>
+                    <a href="#" class="header__catalog-category__item" data-category="Морепродукты">
+                        Морепродукты
+                    </a>
+                    <a href="#" class="header__catalog-category__item" data-category="Напитки">
+                        Напитки
+                    </a>
+                    <a href="#" class="header__catalog-category__item" data-category="Полуфабрикаты">
+                        Полуфабрикаты
+                    </a>
+                    <a href="#" class="header__catalog-category__item" data-category="Сладости">
+                        Сладости
+                    </a>
+                    <a href="#" class="header__catalog-category__item" data-category="Сувениры, подарки">
+                        Сувениры, подарки
+                    </a>
+                    <a href="#" class="header__catalog-category__item" data-category="Чай">
+                        Чай
+                    </a>
+                    <a href="#" class="header__catalog-category__item" data-category="Для иммунитета">
+                        Для иммунитета
+                    </a>
+                </div>
+                <div class="header__catalog-category__content">
+                    <div class="category__content category__content_base" data-category="База">
+                        <a href="#" class="card_catalog_category">
+                            <div class="card_catalog_category__img-wrapper">
+                                <img class="card_catalog_category__img" src="./img/category-catalog/kr_ikra.png"
+                                    alt="Красная икра">
+                            </div>
+                            <div class="card_catalog_category__title">Красная икра</div>
+                        </a>
+                        <a href="#" class="card_catalog_category">
+                            <div class="card_catalog_category__img-wrapper">
+                                <img class="card_catalog_category__img" src="./img/category-catalog/fish.png"
+                                    alt="Рыба">
+                            </div>
+                            <div class="card_catalog_category__title">Рыба</div>
+                        </a>
+                        <a href="#" class="card_catalog_category">
+                            <div class="card_catalog_category__img-wrapper">
+                                <img class="card_catalog_category__img" src="./img/category-catalog/sweet.png"
+                                    alt="Сладости">
+                            </div>
+                            <div class="card_catalog_category__title">Сладости</div>
+                        </a>
+                        <a href="#" class="card_catalog_category">
+                            <div class="card_catalog_category__img-wrapper">
+                                <img class="card_catalog_category__img" src="./img/category-catalog/sea_product.png"
+                                    alt="Морепродукты">
+                            </div>
+                            <div class="card_catalog_category__title">Морепродукты</div>
+                        </a>
+                        <a href="#" class="card_catalog_category">
+                            <div class="card_catalog_category__img-wrapper">
+                                <img class="card_catalog_category__img" src="./img/category-catalog/dicors.png"
+                                    alt="Дикоросы">
+                            </div>
+                            <div class="card_catalog_category__title">Дикоросы</div>
+                        </a>
+                        <a href="#" class="card_catalog_category">
+                            <div class="card_catalog_category__img-wrapper">
+                                <img class="card_catalog_category__img" src="./img/category-catalog/tea.png" alt="Чай">
+                            </div>
+                            <div class="card_catalog_category__title">Чай</div>
+                        </a>
+                    </div>
+                    <div class="category__content" data-category="Икра">
+                        <div class="category__content_top">
+                            <a href="#" class="category__content__subcategory">Слабосоленая</a>
+                            <a href="#" class="category__content__subcategory">Вяленая</a>
+                            <a href="#" class="category__content__subcategory">Слабосоленая</a>
+                            <a href="#" class="category__content__subcategory">Вяленая</a>
+                            <a href="#" class="category__content__subcategory">Слабосоленая</a>
+                            <a href="#" class="category__content__subcategory">Вяленая</a>
+                            <a href="#" class="category__content__subcategory">Свежемороженая</a>
+                            <a href="#" class="category__content__subcategory">Холодное и горячее копчение</a>
+                        </div>
+                        <div class="category__content_bottom">
+                            <div class="header__catalog__card-product">
+
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/nerka2.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Нерка ломтики по-камчатски подкопченные...
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img"
+                                        src="./img/header-catalog/ugol_fish.png" alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Угольная рыба, стейки, 500 гр.
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/nerka.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Нерка подкопченная ломтики 150 гр, Камчатка
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/rulet.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Рулет "Шах и мат" из филе нерки и палтуса, подкопче...
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="category__content" data-category="Рыба">
+                        <div class="category__content_top">
+                            <a href="#" class="category__content__subcategory">Слабосоленая</a>
+                            <a href="#" class="category__content__subcategory">Вяленая</a>
+                            <a href="#" class="category__content__subcategory">Свежемороженая</a>
+                            <a href="#" class="category__content__subcategory">Холодное и горячее копчение</a>
+                        </div>
+                        <div class="category__content_bottom">
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img"
+                                        src="./img/header-catalog/ugol_fish.png" alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Угольная рыба, стейки, 500 гр.
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/nerka.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Нерка подкопченная ломтики 150 гр, Камчатка
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/rulet.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Рулет "Шах и мат" из филе нерки и палтуса, подкопче...
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/nerka2.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Нерка ломтики по-камчатски подкопченные...
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category__content" data-category="Консервы">
+                        <div class="category__content_top">
+
+                        </div>
+                        <div class="category__content_bottom">
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/pash.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Паштет из мяса лося финские традиции 200гр...
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/mintai.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Минтай натуральный с добавлением масла, 200 г...
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/pash.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Паштет из мяса лося финские традиции 200гр...
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/mintai.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Минтай натуральный с добавлением масла, 200 г...
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category__content" data-category="Дикоросы">
+                        <div class="category__content_top">
+                            <a href="#" class="category__content__subcategory">Слабосоленая</a>
+                            <a href="#" class="category__content__subcategory">Вяленая</a>
+                            <a href="#" class="category__content__subcategory">Слабосоленая</a>
+                            <a href="#" class="category__content__subcategory">Вяленая</a>
+                            <a href="#" class="category__content__subcategory">Слабосоленая</a>
+                            <a href="#" class="category__content__subcategory">Вяленая</a>
+                            <a href="#" class="category__content__subcategory">Свежемороженая</a>
+                            <a href="#" class="category__content__subcategory">Холодное и горячее копчение</a>
+                        </div>
+                        <div class="category__content_bottom">
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/nerka2.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Нерка ломтики по-камчатски подкопченные...
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img"
+                                        src="./img/header-catalog/ugol_fish.png" alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Угольная рыба, стейки, 500 гр.
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/nerka.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Нерка подкопченная ломтики 150 гр, Камчатка
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/rulet.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Рулет "Шах и мат" из филе нерки и палтуса, подкопче...
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="category__content" data-category="Колбасы и мясо">
+                        <div class="category__content_top">
+                            <a href="#" class="category__content__subcategory">Слабосоленая</a>
+                            <a href="#" class="category__content__subcategory">Вяленая</a>
+                            <a href="#" class="category__content__subcategory">Свежемороженая</a>
+                            <a href="#" class="category__content__subcategory">Холодное и горячее копчение</a>
+                        </div>
+                        <div class="category__content_bottom">
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img"
+                                        src="./img/header-catalog/ugol_fish.png" alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Угольная рыба, стейки, 500 гр.
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/nerka.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Нерка подкопченная ломтики 150 гр, Камчатка
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/rulet.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Рулет "Шах и мат" из филе нерки и палтуса, подкопче...
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/nerka2.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Нерка ломтики по-камчатски подкопченные...
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category__content" data-category="Морепродукты">
+                        <div class="category__content_top">
+
+                        </div>
+                        <div class="category__content_bottom">
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/pash.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Паштет из мяса лося финские традиции 200гр...
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/mintai.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Минтай натуральный с добавлением масла, 200 г...
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/pash.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Паштет из мяса лося финские традиции 200гр...
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/mintai.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Минтай натуральный с добавлением масла, 200 г...
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category__content" data-category="Напитки">
+                        <div class="category__content_top">
+                            <a href="#" class="category__content__subcategory">Слабосоленая</a>
+                            <a href="#" class="category__content__subcategory">Вяленая</a>
+                            <a href="#" class="category__content__subcategory">Слабосоленая</a>
+                            <a href="#" class="category__content__subcategory">Вяленая</a>
+                            <a href="#" class="category__content__subcategory">Слабосоленая</a>
+                            <a href="#" class="category__content__subcategory">Вяленая</a>
+                            <a href="#" class="category__content__subcategory">Свежемороженая</a>
+                            <a href="#" class="category__content__subcategory">Холодное и горячее копчение</a>
+                        </div>
+                        <div class="category__content_bottom">
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/nerka2.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Нерка ломтики по-камчатски подкопченные...
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img"
+                                        src="./img/header-catalog/ugol_fish.png" alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Угольная рыба, стейки, 500 гр.
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/nerka.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Нерка подкопченная ломтики 150 гр, Камчатка
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/rulet.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Рулет "Шах и мат" из филе нерки и палтуса, подкопче...
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="category__content" data-category="Полуфабрикаты">
+                        <div class="category__content_top">
+                            <a href="#" class="category__content__subcategory">Слабосоленая</a>
+                            <a href="#" class="category__content__subcategory">Вяленая</a>
+                            <a href="#" class="category__content__subcategory">Свежемороженая</a>
+                            <a href="#" class="category__content__subcategory">Холодное и горячее копчение</a>
+                        </div>
+                        <div class="category__content_bottom">
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img"
+                                        src="./img/header-catalog/ugol_fish.png" alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Угольная рыба, стейки, 500 гр.
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/nerka.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Нерка подкопченная ломтики 150 гр, Камчатка
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/rulet.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Рулет "Шах и мат" из филе нерки и палтуса, подкопче...
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/nerka2.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Нерка ломтики по-камчатски подкопченные...
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category__content" data-category="Сладости">
+                        <div class="category__content_top">
+
+                        </div>
+                        <div class="category__content_bottom">
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/pash.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Паштет из мяса лося финские традиции 200гр...
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/mintai.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Минтай натуральный с добавлением масла, 200 г...
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/pash.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Паштет из мяса лося финские традиции 200гр...
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/mintai.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Минтай натуральный с добавлением масла, 200 г...
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category__content" data-category="Сувениры, подарки">
+                        <div class="category__content_top">
+                            <a href="#" class="category__content__subcategory">Слабосоленая</a>
+                            <a href="#" class="category__content__subcategory">Вяленая</a>
+                            <a href="#" class="category__content__subcategory">Слабосоленая</a>
+                            <a href="#" class="category__content__subcategory">Вяленая</a>
+                            <a href="#" class="category__content__subcategory">Слабосоленая</a>
+                            <a href="#" class="category__content__subcategory">Вяленая</a>
+                            <a href="#" class="category__content__subcategory">Свежемороженая</a>
+                            <a href="#" class="category__content__subcategory">Холодное и горячее копчение</a>
+                        </div>
+                        <div class="category__content_bottom">
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/nerka2.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Нерка ломтики по-камчатски подкопченные...
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img"
+                                        src="./img/header-catalog/ugol_fish.png" alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Угольная рыба, стейки, 500 гр.
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/nerka.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Нерка подкопченная ломтики 150 гр, Камчатка
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/rulet.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Рулет "Шах и мат" из филе нерки и палтуса, подкопче...
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="category__content" data-category="Чай">
+                        <div class="category__content_top">
+                            <a href="#" class="category__content__subcategory">Слабосоленая</a>
+                            <a href="#" class="category__content__subcategory">Вяленая</a>
+                            <a href="#" class="category__content__subcategory">Свежемороженая</a>
+                            <a href="#" class="category__content__subcategory">Холодное и горячее копчение</a>
+                        </div>
+                        <div class="category__content_bottom">
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img"
+                                        src="./img/header-catalog/ugol_fish.png" alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Угольная рыба, стейки, 500 гр.
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/nerka.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Нерка подкопченная ломтики 150 гр, Камчатка
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/rulet.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Рулет "Шах и мат" из филе нерки и палтуса, подкопче...
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/nerka2.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Нерка ломтики по-камчатски подкопченные...
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category__content" data-category="Для иммунитета">
+                        <div class="category__content_top">
+
+                        </div>
+                        <div class="category__content_bottom">
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/pash.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Паштет из мяса лося финские традиции 200гр...
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/mintai.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Минтай натуральный с добавлением масла, 200 г...
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/pash.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Паштет из мяса лося финские традиции 200гр...
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__catalog__card-product">
+
+                                <a href="#" class="header__catalog__card-product-img_wrapper">
+                                    <img class="header__catalog__card-product-img" src="./img/header-catalog/mintai.png"
+                                        alt="">
+                                </a>
+                                <div class="header__catalog__card-product-info">
+                                    <a href="#" class="header__catalog__card-product__title">
+                                        Минтай натуральный с добавлением масла, 200 г...
+                                    </a>
+                                    <div class="header__catalog__card-product__stat">
+                                        500 гр.
+                                    </div>
+                                    <div class="header__catalog__card-product__price">
+                                        1 980 ₽ / шт.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__menu">
+        <div class="header__menu-content container">
+            <div class="btn btn_header-menu btn_account">
+                <svg class="btn_header_img" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="7" r="4" fill="#163E71" stroke="#163E71" stroke-width="1.5" />
+                    <path
+                        d="M16 21H8.00001C5.79087 21 3.84014 19.0616 4.99177 17.1763C6.11781 15.333 8.2972 14 12 14C15.7028 14 17.8822 15.333 19.0082 17.1763C20.1599 19.0616 18.2091 21 16 21Z"
+                        fill="#163E71" stroke="#163E71" stroke-width="1.5" />
+                </svg>
+
+                <span class="btn_account__name">
+                    Личный кабинет
+                </span>
+            </div>
+            <a href="#" class="btn btn_header-menu btn_account_auth">
+                <svg class="btn_header_img" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="7" r="4" fill="#163E71" stroke="#163E71" stroke-width="1.5" />
+                    <path
+                        d="M16 21H8.00001C5.79087 21 3.84014 19.0616 4.99177 17.1763C6.11781 15.333 8.2972 14 12 14C15.7028 14 17.8822 15.333 19.0082 17.1763C20.1599 19.0616 18.2091 21 16 21Z"
+                        fill="#163E71" stroke="#163E71" stroke-width="1.5" />
+                </svg>
+
+                <span class="btn_account__name">
+                    Анна Б.
+                </span>
+            </a>
+            <div class="btn btn_header-menu  btn_catalog_mobile">
+                <span>Каталог товаров</span>
+            </div>
+            <nav class="menu__nav">
+                <ol class="menu__nav-list">
+                    <li>
+                        <a href="#" class="menu__nav__item">
+                            Ресторан
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu__nav__item">
+                            Мероприятия
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu__nav__item">
+                            Бонусная программа
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu__nav__item">
+                            Оплата и доставка
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu__nav__item">
+                            Производство
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu__nav__item">
+                            Журнал
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu__nav__item">
+                            Вакансии
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu__nav__item spec-item">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.6654 3.33337L3.33203 12.6667" stroke="#163E71" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M4.66602 6.66669C5.77059 6.66669 6.66602 5.77126 6.66602 4.66669C6.66602 3.56212 5.77059 2.66669 4.66602 2.66669C3.56145 2.66669 2.66602 3.56212 2.66602 4.66669C2.66602 5.77126 3.56145 6.66669 4.66602 6.66669Z"
+                                    stroke="#163E71" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M11.332 13.3334C12.4366 13.3334 13.332 12.4379 13.332 11.3334C13.332 10.2288 12.4366 9.33337 11.332 9.33337C10.2275 9.33337 9.33203 10.2288 9.33203 11.3334C9.33203 12.4379 10.2275 13.3334 11.332 13.3334Z"
+                                    stroke="#163E71" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                            <span>Акции</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu__nav__item spec-item">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.666 2.66669H3.33268C2.96449 2.66669 2.66602 2.96516 2.66602 3.33335V12.6667C2.66602 13.0349 2.96449 13.3334 3.33268 13.3334H12.666C13.0342 13.3334 13.3327 13.0349 13.3327 12.6667V3.33335C13.3327 2.96516 13.0342 2.66669 12.666 2.66669Z"
+                                    stroke="#163E71" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M8 7.33331H10.6667" stroke="#163E71" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M8 5.33331H10.6667" stroke="#163E71" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M5.33399 13.3334L5.33398 2.66669" stroke="#163E71" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                            <span>Рецепты</span>
+                        </a>
+                    </li>
+                </ol>
+            </nav>
+            <div class="header__menu-bottom">
+                <a href="tel:+79255175885" class="header__menu-tel">8 (925) 517-58-85</a>
+                <div class="header__social-links">
+                    <a class="social-link" href="#">
+                        <svg class="social-link_img" width="18" height="10" viewBox="0 0 23 13" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19.0859 7.45459C18.7141 6.99956 18.8204 6.79716 19.0859 6.39044C19.0907 6.38576 22.1603 2.27591 22.4766 0.882115L22.4785 0.881179C22.6356 0.373286 22.4785 0 21.7185 0H19.2037C18.5636 0 18.2684 0.320335 18.1102 0.67878C18.1102 0.67878 16.8299 3.64836 15.0186 5.57327C14.434 6.12948 14.1637 6.30776 13.8446 6.30776C13.6874 6.30776 13.443 6.12948 13.443 5.62158V0.881179C13.443 0.272064 13.2638 0 12.7338 0H8.77959C8.37804 0 8.13939 0.284143 8.13939 0.548764C8.13939 1.12632 9.04507 1.25915 9.139 2.88413V6.40992C9.139 7.18248 8.99428 7.32457 8.67324 7.32457C7.81834 7.32457 5.74348 4.34292 4.51391 0.93043C4.26569 0.26832 4.02322 0.000891366 3.37824 0.000891366H0.86253C0.144713 0.000891366 0 0.321271 0 0.679716C0 1.31299 0.854862 4.46179 3.97531 8.62178C6.05496 11.4613 8.98375 13 11.648 13C13.2494 13 13.4449 12.6583 13.4449 12.0705C13.4449 9.35721 13.3002 9.10093 14.1023 9.10093C14.4742 9.10093 15.1144 9.27921 16.6094 10.6489C18.3182 12.2729 18.599 13 19.5555 13H22.0702C22.7871 13 23.1503 12.6583 22.9414 11.9842C22.4631 10.5662 19.2316 7.64959 19.0859 7.45459Z"
+                                fill="#5873B6" />
+                        </svg>
+
+                    </a>
+                    <a class="social-link" href="#">
+                        <svg class="social-link_img" width="14" height="14" viewBox="0 0 18 18" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.00227 0H8.99773C4.03538 0 0 4.0365 0 9C0 10.9688 0.6345 12.7935 1.71338 14.2751L0.59175 17.6186L4.05112 16.5128C5.47427 17.4555 7.17188 18 9.00227 18C13.9646 18 18 13.9624 18 9C18 4.03762 13.9646 0 9.00227 0ZM14.2391 12.7091C14.022 13.3222 13.1603 13.8308 12.4729 13.9792C12.0026 14.0794 11.3884 14.1593 9.32062 13.302C6.67573 12.2062 4.9725 9.51862 4.83977 9.34423C4.71262 9.16988 3.771 7.92112 3.771 6.62962C3.771 5.33812 4.42688 4.70927 4.69123 4.43927C4.90838 4.21762 5.26723 4.11638 5.6115 4.11638C5.72288 4.11638 5.823 4.122 5.913 4.1265C6.17738 4.13773 6.31012 4.1535 6.4845 4.57088C6.70162 5.094 7.23038 6.3855 7.29338 6.51827C7.3575 6.651 7.42162 6.831 7.33162 7.00538C7.24727 7.18538 7.173 7.26523 7.04023 7.41823C6.9075 7.57123 6.7815 7.68827 6.64877 7.8525C6.52727 7.99538 6.39 8.14838 6.543 8.41273C6.696 8.6715 7.22477 9.53438 8.00323 10.2274C9.00788 11.1217 9.82238 11.4075 10.1138 11.529C10.3309 11.619 10.5896 11.5976 10.7482 11.4289C10.9496 11.2118 11.1982 10.8518 11.4514 10.4974C11.6314 10.2431 11.8586 10.2116 12.0971 10.3016C12.3401 10.386 13.626 11.0216 13.8904 11.1532C14.1547 11.286 14.3291 11.349 14.3933 11.4604C14.4562 11.5717 14.4562 12.0949 14.2391 12.7091Z"
+                                fill="#5873B6" />
+                        </svg>
+
+                    </a>
+                    <a class="social-link" href="#">
+                        <svg class="social-link_img" width="17" height="14" viewBox="0 0 22 18" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.63261 11.8632L8.2687 16.8888C8.78938 16.8888 9.01488 16.6692 9.28529 16.4055L11.7264 14.115L16.7847 17.7519C17.7124 18.2595 18.366 17.9922 18.6163 16.914L21.9365 1.63925L21.9374 1.63835C22.2317 0.291965 21.4415 -0.234535 20.5377 0.0957649L1.02135 7.43163C-0.310592 7.93923 -0.290429 8.66823 0.794931 8.99853L5.78447 10.5222L17.3742 3.40233C17.9196 3.04773 18.4155 3.24393 18.0076 3.59853L8.63261 11.8632Z"
+                                fill="#5873B6" />
+                        </svg>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__category_mobile">
+
+        <div class="header__category_mobile__content container">
+            <div class="btn_prev btn_prev_category">В меню</div>
+            <div class="header__catalog-category_mobile">
+                <div class="header__catalog-category_mobile__item" data-category="Икра">
+                    Икра
+                </div>
+                <div class="header__catalog-category_mobile__item" data-category="Рыба">
+                    Рыба
+                </div>
+                <a href="#" class="header__catalog-category_mobile__item">
+                    Консервы
+                </a>
+                <div class="header__catalog-category_mobile__item" data-category="Дикоросы">
+                    Дикоросы
+                </div>
+                <a href="#" class="header__catalog-category_mobile__item">
+                    Колбасы и мясо
+                </a>
+                <a href="#" class="header__catalog-category_mobile__item">
+                    Морепродукты
+                </a>
+                <a href="#" class="header__catalog-category_mobile__item">
+                    Напитки
+                </a>
+                <a href="#" class="header__catalog-category_mobile__item">
+                    Полуфабрикаты
+                </a>
+                <div class="header__catalog-category_mobile__item" data-category="Сладости">
+                    Сладости
+                </div>
+                <div class="header__catalog-category_mobile__item" data-category="Сувениры, подарки">
+                    Сувениры, подарки
+                </div>
+                <a href="#" class="header__catalog-category_mobile__item">
+                    Чай
+                </a>
+                <a href="#" class="header__catalog-category_mobile__item">
+                    Для иммунитета
+                </a>
+            </div>
+            <div class="header__category_mobile__cards">
+                <a href="#" class="card_catalog_category">
+                    <div class="card_catalog_category__img-wrapper">
+                        <img class="card_catalog_category__img" src="./img/category-catalog/kr_ikra.png"
+                            alt="Красная икра">
+                    </div>
+                    <div class="card_catalog_category__title">Красная икра</div>
+                </a>
+                <a href="#" class="card_catalog_category">
+                    <div class="card_catalog_category__img-wrapper">
+                        <img class="card_catalog_category__img" src="./img/category-catalog/fish.png" alt="Рыба">
+                    </div>
+                    <div class="card_catalog_category__title">Рыба</div>
+                </a>
+                <a href="#" class="card_catalog_category">
+                    <div class="card_catalog_category__img-wrapper">
+                        <img class="card_catalog_category__img" src="./img/category-catalog/sweet.png" alt="Сладости">
+                    </div>
+                    <div class="card_catalog_category__title">Сладости</div>
+                </a>
+                <a href="#" class="card_catalog_category">
+                    <div class="card_catalog_category__img-wrapper">
+                        <img class="card_catalog_category__img" src="./img/category-catalog/sea_product.png"
+                            alt="Морепродукты">
+                    </div>
+                    <div class="card_catalog_category__title">Морепродукты</div>
+                </a>
+                <a href="#" class="card_catalog_category">
+                    <div class="card_catalog_category__img-wrapper">
+                        <img class="card_catalog_category__img" src="./img/category-catalog/dicors.png" alt="Дикоросы">
+                    </div>
+                    <div class="card_catalog_category__title">Дикоросы</div>
+                </a>
+                <a href="#" class="card_catalog_category">
+                    <div class="card_catalog_category__img-wrapper">
+                        <img class="card_catalog_category__img" src="./img/category-catalog/tea.png" alt="Чай">
+                    </div>
+                    <div class="card_catalog_category__title">Чай</div>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="header__subcategory_mobile ">
+        <div class="header__subcategory_mobile__content container">
+            <div class="btn_prev btn_prev_subcategory">Назад</div>
+            <div class="category__content_mobile " data-category="Икра">
+                <div class="category__content_top">
+                    <a href="#" class="category__content__subcategory">Слабосоленая</a>
+                    <a href="#" class="category__content__subcategory">Вяленая</a>
+                    <a href="#" class="category__content__subcategory">Слабосоленая</a>
+                    <a href="#" class="category__content__subcategory">Вяленая</a>
+                    <a href="#" class="category__content__subcategory">Слабосоленая</a>
+                    <a href="#" class="category__content__subcategory">Вяленая</a>
+                    <a href="#" class="category__content__subcategory">Свежемороженая</a>
+                    <a href="#" class="category__content__subcategory">Холодное и горячее копчение</a>
+                </div>
+                <div class="category__content_bottom">
+                    <div class="header__catalog__card-product">
+                        <a href="#" class="header__catalog__card-product-img_wrapper">
+                            <img class="header__catalog__card-product-img" src="./img/header-catalog/nerka2.png" alt="">
+                        </a>
+                        <div class="header__catalog__card-product-info">
+                            <a href="#" class="header__catalog__card-product__title">
+                                Нерка ломтики по-камчатски подкопченные...
+                            </a>
+                            <div class="header__catalog__card-product__stat">
+                                500 гр.
+                            </div>
+                            <div class="header__catalog__card-product__price">
+                                1 980 ₽ / шт.
+                            </div>
+                        </div>
+                        <div class="header__catalog__card-product__btn-busket">В корзину</div>
+                        <div class="card-product-btn-like"></div>
+                    </div>
+                    <div class="header__catalog__card-product">
+
+                        <a href="#" class="header__catalog__card-product-img_wrapper">
+                            <img class="header__catalog__card-product-img" src="./img/header-catalog/ugol_fish.png"
+                                alt="">
+                        </a>
+                        <div class="header__catalog__card-product-info">
+                            <a href="#" class="header__catalog__card-product__title">
+                                Угольная рыба, стейки, 500 гр.
+                            </a>
+                            <div class="header__catalog__card-product__stat">
+                                500 гр.
+                            </div>
+                            <div class="header__catalog__card-product__price">
+                                1 980 ₽ / шт.
+                            </div>
+                        </div>
+                        <div class="header__catalog__card-product__btn-busket">В корзину</div>
+                        <div class="card-product-btn-like"></div>
+                    </div>
+                    <div class="header__catalog__card-product">
+
+                        <a href="#" class="header__catalog__card-product-img_wrapper">
+                            <img class="header__catalog__card-product-img" src="./img/header-catalog/nerka.png" alt="">
+                        </a>
+                        <div class="header__catalog__card-product-info">
+                            <a href="#" class="header__catalog__card-product__title">
+                                Нерка подкопченная ломтики 150 гр, Камчатка
+                            </a>
+                            <div class="header__catalog__card-product__stat">
+                                500 гр.
+                            </div>
+                            <div class="header__catalog__card-product__price">
+                                1 980 ₽ / шт.
+                            </div>
+                        </div>
+                        <div class="header__catalog__card-product__btn-busket">В корзину</div>
+                        <div class="card-product-btn-like"></div>
+                    </div>
+                    <div class="header__catalog__card-product">
+
+                        <a href="#" class="header__catalog__card-product-img_wrapper">
+                            <img class="header__catalog__card-product-img" src="./img/header-catalog/rulet.png" alt="">
+                        </a>
+                        <div class="header__catalog__card-product-info">
+                            <a href="#" class="header__catalog__card-product__title">
+                                Рулет "Шах и мат" из филе нерки и палтуса, подкопче...
+                            </a>
+                            <div class="header__catalog__card-product__stat">
+                                500 гр.
+                            </div>
+                            <div class="header__catalog__card-product__price">
+                                1 980 ₽ / шт.
+                            </div>
+                        </div>
+                        <div class="header__catalog__card-product__btn-busket">В корзину</div>
+                        <div class="card-product-btn-like"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="category__content_mobile" data-category="Рыба">
+                <div class="category__content_top">
+                    <a href="#" class="category__content__subcategory">Слабосоленая</a>
+                    <a href="#" class="category__content__subcategory">Вяленая</a>
+                    <a href="#" class="category__content__subcategory">Свежемороженая</a>
+                    <a href="#" class="category__content__subcategory">Холодное и горячее копчение</a>
+                </div>
+                <div class="category__content_bottom">
+                    <div class="header__catalog__card-product">
+
+                        <a href="#" class="header__catalog__card-product-img_wrapper">
+                            <img class="header__catalog__card-product-img" src="./img/header-catalog/ugol_fish.png"
+                                alt="">
+                        </a>
+                        <div class="header__catalog__card-product-info">
+                            <a href="#" class="header__catalog__card-product__title">
+                                Угольная рыба, стейки, 500 гр.
+                            </a>
+                            <div class="header__catalog__card-product__stat">
+                                500 гр.
+                            </div>
+                            <div class="header__catalog__card-product__price">
+                                1 980 ₽ / шт.
+                            </div>
+                        </div>
+                        <div class="header__catalog__card-product__btn-busket">В корзину</div>
+                        <div class="card-product-btn-like"></div>
+                    </div>
+                    <div class="header__catalog__card-product">
+
+                        <a href="#" class="header__catalog__card-product-img_wrapper">
+                            <img class="header__catalog__card-product-img" src="./img/header-catalog/nerka.png" alt="">
+                        </a>
+                        <div class="header__catalog__card-product-info">
+                            <a href="#" class="header__catalog__card-product__title">
+                                Нерка подкопченная ломтики 150 гр, Камчатка
+                            </a>
+                            <div class="header__catalog__card-product__stat">
+                                500 гр.
+                            </div>
+                            <div class="header__catalog__card-product__price">
+                                1 980 ₽ / шт.
+                            </div>
+                        </div>
+                        <div class="header__catalog__card-product__btn-busket">В корзину</div>
+                        <div class="card-product-btn-like"></div>
+                    </div>
+                    <div class="header__catalog__card-product">
+
+                        <a href="#" class="header__catalog__card-product-img_wrapper">
+                            <img class="header__catalog__card-product-img" src="./img/header-catalog/rulet.png" alt="">
+                        </a>
+                        <div class="header__catalog__card-product-info">
+                            <a href="#" class="header__catalog__card-product__title">
+                                Рулет "Шах и мат" из филе нерки и палтуса, подкопче...
+                            </a>
+                            <div class="header__catalog__card-product__stat">
+                                500 гр.
+                            </div>
+                            <div class="header__catalog__card-product__price">
+                                1 980 ₽ / шт.
+                            </div>
+                        </div>
+                        <div class="header__catalog__card-product__btn-busket">В корзину</div>
+                        <div class="card-product-btn-like"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="category__content_mobile" data-category="Дикоросы">
+                <div class="category__content_top">
+                    <a href="#" class="category__content__subcategory">Слабосоленая</a>
+                    <a href="#" class="category__content__subcategory">Вяленая</a>
+                    <a href="#" class="category__content__subcategory">Слабосоленая</a>
+                    <a href="#" class="category__content__subcategory">Вяленая</a>
+                    <a href="#" class="category__content__subcategory">Слабосоленая</a>
+                    <a href="#" class="category__content__subcategory">Вяленая</a>
+                    <a href="#" class="category__content__subcategory">Свежемороженая</a>
+                    <a href="#" class="category__content__subcategory">Холодное и горячее копчение</a>
+                </div>
+                <div class="category__content_bottom">
+                    <div class="header__catalog__card-product">
+
+                        <a href="#" class="header__catalog__card-product-img_wrapper">
+                            <img class="header__catalog__card-product-img" src="./img/header-catalog/nerka2.png" alt="">
+                        </a>
+                        <div class="header__catalog__card-product-info">
+                            <a href="#" class="header__catalog__card-product__title">
+                                Нерка ломтики по-камчатски подкопченные...
+                            </a>
+                            <div class="header__catalog__card-product__stat">
+                                500 гр.
+                            </div>
+                            <div class="header__catalog__card-product__price">
+                                1 980 ₽ / шт.
+                            </div>
+                        </div>
+                        <div class="header__catalog__card-product__btn-busket">В корзину</div>
+                        <div class="card-product-btn-like"></div>
+                    </div>
+                    <div class="header__catalog__card-product">
+
+                        <a href="#" class="header__catalog__card-product-img_wrapper">
+                            <img class="header__catalog__card-product-img" src="./img/header-catalog/ugol_fish.png"
+                                alt="">
+                        </a>
+                        <div class="header__catalog__card-product-info">
+                            <a href="#" class="header__catalog__card-product__title">
+                                Угольная рыба, стейки, 500 гр.
+                            </a>
+                            <div class="header__catalog__card-product__stat">
+                                500 гр.
+                            </div>
+                            <div class="header__catalog__card-product__price">
+                                1 980 ₽ / шт.
+                            </div>
+                        </div>
+                        <div class="header__catalog__card-product__btn-busket">В корзину</div>
+                        <div class="card-product-btn-like"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="category__content_mobile" data-category="Сладости">
+                <div class="category__content_top">
+
+                </div>
+                <div class="category__content_bottom">
+
+                    <div class="header__catalog__card-product">
+
+                        <a href="#" class="header__catalog__card-product-img_wrapper">
+                            <img class="header__catalog__card-product-img" src="./img/header-catalog/mintai.png" alt="">
+                        </a>
+                        <div class="header__catalog__card-product-info">
+                            <a href="#" class="header__catalog__card-product__title">
+                                Минтай натуральный с добавлением масла, 200 г...
+                            </a>
+                            <div class="header__catalog__card-product__stat">
+                                500 гр.
+                            </div>
+                            <div class="header__catalog__card-product__price">
+                                1 980 ₽ / шт.
+                            </div>
+                        </div>
+                        <div class="header__catalog__card-product__btn-busket">В корзину</div>
+                        <div class="card-product-btn-like"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="category__content_mobile" data-category="Сувениры, подарки">
+                <div class="category__content_top">
+                    <a href="#" class="category__content__subcategory">Слабосоленая</a>
+                    <a href="#" class="category__content__subcategory">Вяленая</a>
+                    <a href="#" class="category__content__subcategory">Слабосоленая</a>
+                    <a href="#" class="category__content__subcategory">Вяленая</a>
+                    <a href="#" class="category__content__subcategory">Слабосоленая</a>
+                    <a href="#" class="category__content__subcategory">Вяленая</a>
+                    <a href="#" class="category__content__subcategory">Свежемороженая</a>
+                    <a href="#" class="category__content__subcategory">Холодное и горячее копчение</a>
+                </div>
+                <div class="category__content_bottom">
+
+                    <div class="header__catalog__card-product">
+
+                        <a href="#" class="header__catalog__card-product-img_wrapper">
+                            <img class="header__catalog__card-product-img" src="./img/header-catalog/nerka.png" alt="">
+                        </a>
+                        <div class="header__catalog__card-product-info">
+                            <a href="#" class="header__catalog__card-product__title">
+                                Нерка подкопченная ломтики 150 гр, Камчатка
+                            </a>
+                            <div class="header__catalog__card-product__stat">
+                                500 гр.
+                            </div>
+                            <div class="header__catalog__card-product__price">
+                                1 980 ₽ / шт.
+                            </div>
+                        </div>
+                        <div class="header__catalog__card-product__btn-busket">В корзину</div>
+                        <div class="card-product-btn-like"></div>
+                    </div>
+                    <div class="header__catalog__card-product">
+
+                        <a href="#" class="header__catalog__card-product-img_wrapper">
+                            <img class="header__catalog__card-product-img" src="./img/header-catalog/rulet.png" alt="">
+                        </a>
+                        <div class="header__catalog__card-product-info">
+                            <a href="#" class="header__catalog__card-product__title">
+                                Рулет "Шах и мат" из филе нерки и палтуса, подкопче...
+                            </a>
+                            <div class="header__catalog__card-product__stat">
+                                500 гр.
+                            </div>
+                            <div class="header__catalog__card-product__price">
+                                1 980 ₽ / шт.
+                            </div>
+                        </div>
+                        <div class="header__catalog__card-product__btn-busket">В корзину</div>
+                        <div class="card-product-btn-like"></div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- конец нужного для хедера -->
+    <main class="main">
+        <nav class="bread-crumbs container">
+            <ol class="bread-crumbs__list">
+                <li>
+                    <a href="#">
+                        Главная
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Каталог
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Рыба
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Слабосоленая
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                      Нерка солено-мороженая (пряная) филе на коже
+                    </a>
+                </li>
+            </ol>
+        </nav>
+       
+    </main>
+    <!-- начало окон модальных -->
+    <div class="modal modal-auth">
+        <div class="modal__content">
+            <div class="modal__title">
+                Вход
+            </div>
+            <form class="modal__form form_auth">
+                <div class="modal__form-close"></div>
+                <label class="form__label">
+                    <input class="form__input" name="phone" type="tel" required>
+                    <span class="form__input-placeholder">Номер телефона</span>
+                </label>
+                <label class="form__label label_password">
+                    <input class="form__input" name="pass" type="password" required>
+                    <span class="form__input-placeholder">Пароль</span>
+                    <span class="input_err">Неверный пароль</span>
+                </label>
+                <div class="form_bottom">
+                    <label class="form_label_check">
+                        <input type="checkbox" name="remember">
+                        <div class="checkbox-marker"></div>
+                        <span>
+                            Запомнить меня
+                        </span>
+                    </label>
+                    <a class="link_password_remember" href="#">Забыли пароль?</a>
+                </div>
+
+                <button class="btn btn-primary btn_form" type="submit">Войти</button>
+            </form>
+            <div class="modal__bottom open_registration">
+
+                Если вы впервые на сайте, и хотите, чтобы мы вас помнили,
+                и все ваши заказы сохранялись, то пройдите
+                <span class="link_open-regist">регистрацию</span>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-regist ">
+        <div class="modal__content">
+            <div class="modal__title">
+                Регистрация
+            </div>
+            <form class="modal__form form_regist">
+                <div class="modal__form-close"></div>
+                <label class="form__label">
+                    <input class="form__input" name="name" type="text" required>
+                    <span class="form__input-placeholder">Имя</span>
+                </label>
+                <label class="form__label">
+                    <input class="form__input" name="surname" type="text" required>
+                    <span class="form__input-placeholder">Фамилия</span>
+                </label>
+                <label class="form__label">
+                    <input class="form__input" name="phone" type="tel" required>
+                    <span class="form__input-placeholder">Телефон</span>
+                </label>
+                <label class="form__label ">
+                    <input class="form__input" name="email" type="email" required>
+                    <span class="form__input-placeholder">E-mail</span>
+
+                </label>
+                <div class="form_captcha__container">
+                    <img src="./img/captcha.png" alt="">
+                </div>
+                <label class="form_label_check">
+                    <input type="checkbox" name="politics" required>
+                    <div class="checkbox-marker"></div>
+                    <span>
+                        Даю свое согласие на обработку <a href="#">персональных данных</a>
+                    </span>
+                </label>
+
+
+
+                <button class="btn btn-primary btn_form btn_form_regist" type="submit">Зарегистрироваться</button>
+            </form>
+            <div class="modal__bottom open_auth">
+
+                Уже зарегистрированы?
+                <span class="link_open-regist">Войдите</span>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-alert">
+        <div class="modal__content">
+            <svg class="modal-alert__img" width="121" height="124" viewBox="0 0 121 124" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_278_16756)">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M96.278 76.4881C90.6154 89.2539 75.5395 99.9064 61.3504 99.7183C43.2069 99.9643 25.6305 84.2098 23.7987 66.2625C22.9555 57.9691 24.7146 48.554 29.5921 41.6718C36.5122 31.8876 48.9204 24.1298 61.1614 24.2962C73.5187 24.1298 86.0723 32.0468 92.9561 41.9902C99.331 51.2027 100.814 66.248 96.2707 76.4881H96.278ZM1.04666 36.6495C2.57316 35.4626 4.08511 35.6942 5.85875 36.056L6.01867 36.0922C10.9834 37.4744 15.9772 38.7554 20.8475 40.4415L20.971 40.485C23.3625 41.4764 24.6273 43.9007 23.2826 46.2599C22.0178 48.4889 19.6844 48.308 17.5982 47.6205C14.0073 46.5784 3.44544 44.1468 1.11208 41.7369C0.152575 40.7455 -0.0654951 39.9494 0.021733 38.5962L0.0944231 37.3948L1.04666 36.6495ZM56.5892 18.2752C56.5892 13.687 56.2257 9.07719 56.7709 4.50352C57.0908 1.79696 58.7045 -1.05435 61.8883 0.40025C63.8219 1.28314 63.88 3.31669 64.1708 5.09694C64.5706 7.57917 64.4979 10.5028 64.4543 13.0285C64.4106 15.6772 64.5415 21.539 61.0306 22.1035C58.7917 22.4653 56.909 20.7936 56.6183 18.6298L56.5965 18.4489V18.2679L56.5892 18.2752ZM25.6159 13.0864C27.9347 12.3338 29.3086 13.6147 30.5298 15.3805C33.0594 19.0423 36.4031 22.0745 38.9037 25.7798C40.4156 28.0232 39.965 31.3811 36.9047 31.9238C34.0044 32.4376 29.4394 26.6554 27.7603 24.5929C25.7977 22.1758 20.0624 14.8884 25.6087 13.0936L25.6159 13.0864ZM92.8325 13.137C96.1399 11.8995 98.5677 15.2068 97.4483 18.2318C96.6414 20.4173 88.0131 30.9686 85.9778 31.7357C82.6195 33.0093 80.1335 29.5718 81.4928 26.5541C82.307 24.7521 84.4513 22.4219 85.7597 20.866C87.2063 19.1436 88.7546 17.4791 90.0848 15.6627C90.9135 14.5337 91.4296 13.6581 92.8325 13.137ZM120.709 38.1258C121.174 40.4271 119.866 42.1494 117.78 42.9889C113.157 44.8488 107.865 46.6507 102.995 47.6205C101.025 48.0619 99.7671 48.6843 98.0662 46.933C96.0381 44.8415 97.223 41.8961 99.5491 40.6442C102.289 39.1823 116.224 35.2093 118.914 36.0995L120.397 36.5916L120.702 38.1185L120.709 38.1258ZM0.196189 85.4256C0.108961 84.0723 0.327031 83.2763 1.28654 82.2776C3.61989 79.8749 14.189 77.4361 17.7727 76.394C19.8589 75.6993 22.185 75.5184 23.457 77.7473C24.8018 80.1065 23.537 82.5381 21.1382 83.5295L21.0219 83.573C16.1662 85.2953 11.1651 86.5401 6.21493 87.9223L6.1059 87.9512L6.0114 87.9657C4.27411 88.3275 2.75488 88.5591 1.22839 87.3651L0.276148 86.6269L0.196189 85.4256ZM56.8 105.392C57.098 103.228 58.9807 101.556 61.2196 101.918C64.7305 102.483 64.5924 108.337 64.6433 110.993C64.6869 113.519 64.7668 116.443 64.3598 118.925C64.069 120.705 64.0109 122.739 62.0773 123.621C58.8935 125.069 57.2797 122.232 56.9599 119.518C56.4147 114.945 56.7782 110.335 56.7782 105.747V105.573L56.8 105.392ZM25.8049 110.935C20.2587 109.133 25.9939 101.846 27.9566 99.4288C29.6357 97.3663 34.1934 91.5841 37.101 92.0979C40.154 92.6407 40.6046 95.9986 39.0927 98.2348C36.5994 101.94 33.2557 104.972 30.7188 108.634C29.4976 110.4 28.1237 111.681 25.8049 110.928V110.935ZM93.0215 110.892C91.6113 110.364 91.1025 109.495 90.2738 108.366C88.9508 106.55 87.3953 104.885 85.9487 103.163C84.6403 101.607 82.496 99.2769 81.6818 97.4749C80.3225 94.4571 82.8085 91.0196 86.1668 92.2933C88.2021 93.0677 96.8305 103.619 97.6373 105.797C98.7567 108.815 96.3216 112.122 93.0215 110.892ZM119.11 87.9151C116.42 88.8052 102.478 84.8322 99.7453 83.3703C97.4192 82.1256 96.2271 79.1802 98.2552 77.0888C99.9489 75.3375 101.221 75.9526 103.191 76.4013C108.061 77.3782 113.353 79.173 117.976 81.0328C120.062 81.8723 121.371 83.5947 120.905 85.9032L120.593 87.423L119.117 87.9151H119.11ZM37.6025 44.4363C33.5828 50.0882 31.2421 56.7027 31.6856 63.7007C32.2235 72.2112 36.7375 79.7302 43.4468 84.8973C48.5497 88.8341 54.8592 91.49 61.3431 91.642C68.3577 91.4828 75.067 88.2045 80.4897 83.9059C89.9758 76.3868 92.8179 63.4401 88.7618 52.281C84.6839 41.0494 73.148 32.6764 61.1541 32.4014C52.1115 32.6185 43.3887 37.8001 37.6025 44.4435V44.4363Z"
+                        fill="#E95128" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_278_16756">
+                        <rect width="121" height="124" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+
+            <div class="modal__form-close"></div>
+            <div class="modal__title">
+                Вы успешно зарегистрировались!
+            </div>
+            <p>Мы прислали ваши данные на электронную почту.</p>
+            <a href="#" class="btn btn-primary btn_form"> В личный кабинет</a>
+        </div>
+    </div>
+    <!-- конец окон модал -->
+    <footer class="footer">
+        <div class="footer__top-line">
+
+        </div>
+        <div class="footer__content container">
+            <a href="#" class="footer__logo-wrapper">
+                <img src="./img/logo2.svg" alt="Логотип">
+            </a>
+            <a href="#" class="footer_achiev">
+                <span>Участник федерального проекта</span>
+                <img src="./img/achev.svg" alt="лого федерального проекта">
+            </a>
+            <nav class="footer_nav">
+                <ol class="footer_nav__list">
+                    <a href="#" class="footer_nav__list-title">Каталог</a>
+                    <li>
+                        <a href="#" class="footer_nav__list-item">
+                            Икра
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer_nav__list-item">
+                            Рыба
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer_nav__list-item">
+                            Консервы
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer_nav__list-item">
+                            Дикоросы
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer_nav__list-item">
+                            Колбасы и мясо
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer_nav__list-item">
+                            Морепродукты
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer_nav__list-item">
+                            Напитки
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer_nav__list-item">
+                            Полуфабрикаты
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer_nav__list-item">
+                            Сладости
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer_nav__list-item">
+                            Сувениры, подарки
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer_nav__list-item">
+                            Чай
+                        </a>
+                    </li>
+                </ol>
+                <ol class="footer_nav__list">
+                    <a href="#" class="footer_nav__list-title">О компании</a>
+                    <li>
+                        <a href="#" class="footer_nav__list-item">
+                            Журнал
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer_nav__list-item">
+                            Контакты
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer_nav__list-item">
+                            Вакансии
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer_nav__list-item">
+                            Отзывы
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer_nav__list-item">
+                            Оптовикам
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer_nav__list-item">
+                            Наши <br> мероприятия
+                        </a>
+                    </li>
+                </ol>
+                <ol class="footer_nav__list">
+                    <a href="#" class="footer_nav__list-title">Информация</a>
+                    <li>
+                        <a href="#" class="footer_nav__list-item">
+                            Бонусная программа
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer_nav__list-item">
+                            Оплата и доставка
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer_nav__list-item">
+                            Акции и предложения
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer_nav__list-item">
+                            Рецепты
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer_nav__list-item">
+                            Фудмолл
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer_nav__list-item">
+                            Наше производство
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer_nav__list-item">
+                            Бренды
+                        </a>
+                    </li>
+                </ol>
+            </nav>
+            <div class="footer_contacts">
+                <div class="footer_title">Контакты</div>
+
+                <a href="tel:+79255175885" class="footer_tel">8 (925) 517-58-85</a>
+                <a href="#" class="footer_adress">МО, с. Ильинское, ул. Ленина, 29/1</a>
+            </div>
+            <div class="footer_restaurant">
+                <div class="footer_title">Ресторан</div>
+                <a href="#" class="footer_adress">Москва, Проспект Мира, 119с66А</a>
+            </div>
+            <div class="footer_socials">
+                <div class="footer_title">Социальные сети</div>
+                <div class="footer_socials-wrapper">
+                    <a href="#" class="footer_social-link">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.5958 10.8567C16.2725 10.4483 16.365 10.2667 16.5958 9.90169C16.6 9.89749 19.2692 6.20917 19.5442 4.95833L19.5458 4.95749C19.6825 4.50169 19.5458 4.16669 18.885 4.16669H16.6983C16.1417 4.16669 15.885 4.45417 15.7475 4.77585C15.7475 4.77585 14.6342 7.44085 13.0592 9.16833C12.5508 9.66749 12.3158 9.82749 12.0383 9.82749C11.9017 9.82749 11.6892 9.66749 11.6892 9.21169V4.95749C11.6892 4.41085 11.5333 4.16669 11.0725 4.16669H7.63416C7.285 4.16669 7.07748 4.42169 7.07748 4.65917C7.07748 5.17749 7.865 5.29669 7.94668 6.75501V9.91917C7.94668 10.6125 7.82084 10.74 7.54168 10.74C6.79832 10.74 4.99416 8.06417 3.925 5.00169C3.70917 4.40749 3.49833 4.16749 2.9375 4.16749H0.75C0.125833 4.16749 0 4.45501 0 4.77669C0 5.34501 0.743332 8.17085 3.45667 11.9042C5.265 14.4525 7.81168 15.8333 10.1283 15.8333C11.5208 15.8333 11.6908 15.5267 11.6908 14.9992C11.6908 12.5642 11.565 12.3342 12.2625 12.3342C12.5858 12.3342 13.1425 12.4942 14.4425 13.7233C15.9283 15.1808 16.1725 15.8333 17.0042 15.8333H19.1908C19.8142 15.8333 20.13 15.5267 19.9483 14.9217C19.5325 13.6492 16.7225 11.0317 16.5958 10.8567Z"
+                                fill="#E95128" />
+                        </svg>
+                        <a href="#" class="footer_social-link">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.0198 12.4178L7.71544 16.6616C8.15092 16.6616 8.33952 16.4762 8.56568 16.2535L10.6074 14.3193L14.8379 17.3905C15.6138 17.8191 16.1605 17.5934 16.3698 16.6829L19.1467 3.78425L19.1475 3.78349C19.3936 2.64654 18.7327 2.20194 17.9768 2.48086L1.65403 8.67559C0.540036 9.10423 0.5569 9.71983 1.46466 9.99875L5.63772 11.2854L15.3309 5.27307C15.7871 4.97363 16.2019 5.13931 15.8607 5.43875L8.0198 12.4178Z"
+                                    fill="#E95128" />
+                            </svg>
+
+                        </a>
+                    </a>
+                </div>
+
+
+            </div>
+            <div class="footer__pay">
+                <a href="#" class="footer__pay-link">
+                    <svg width="40" height="31" viewBox="0 0 40 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_181_1553)">
+                            <path
+                                d="M7.17168 30.9335V28.9004C7.17168 28.1227 6.69647 27.6135 5.88071 27.6135C5.47283 27.6135 5.02931 27.7477 4.72438 28.1899C4.48678 27.8188 4.14622 27.6135 3.63538 27.6135C3.29482 27.6135 2.95425 27.7161 2.68497 28.0872V27.6806H1.97217V30.9335H2.68497V29.1373C2.68497 28.5609 2.98989 28.2885 3.4651 28.2885C3.9403 28.2885 4.1779 28.5925 4.1779 29.1373V30.9335H4.8907V29.1373C4.8907 28.5609 5.23127 28.2885 5.67083 28.2885C6.14603 28.2885 6.38363 28.5925 6.38363 29.1373V30.9335H7.17168ZM17.7449 27.6806H16.5886V26.6976H15.8758V27.6806H15.2303V28.3241H15.8758V29.8163C15.8758 30.5624 16.1807 31.0006 16.9965 31.0006C17.3014 31.0006 17.642 30.8979 17.8796 30.7637L17.6737 30.1518C17.4677 30.2861 17.2301 30.3216 17.0599 30.3216C16.7193 30.3216 16.5847 30.1163 16.5847 29.7808V28.3241H17.741V27.6806H17.7449ZM23.7959 27.6096C23.388 27.6096 23.1147 27.8148 22.9444 28.0833V27.6767H22.2316V30.9295H22.9444V29.0978C22.9444 28.557 23.182 28.2491 23.6256 28.2491C23.7602 28.2491 23.9305 28.2846 24.0691 28.3162L24.275 27.6372C24.1325 27.6096 23.9305 27.6096 23.7959 27.6096ZM14.6522 27.949C14.3116 27.7122 13.8364 27.6096 13.3256 27.6096C12.5098 27.6096 11.9673 28.0162 11.9673 28.6596C11.9673 29.2005 12.3751 29.5084 13.088 29.6071L13.4285 29.6426C13.8008 29.7097 14.0067 29.8123 14.0067 29.9821C14.0067 30.2189 13.7334 30.3887 13.2582 30.3887C12.783 30.3887 12.4068 30.2189 12.1692 30.0492L11.8287 30.59C12.2009 30.8624 12.7117 30.9966 13.2226 30.9966C14.173 30.9966 14.7195 30.5545 14.7195 29.9466C14.7195 29.3702 14.276 29.0662 13.5988 28.9636L13.2582 28.9281C12.9533 28.8925 12.7157 28.8254 12.7157 28.6241C12.7157 28.3872 12.9533 28.253 13.3295 28.253C13.7374 28.253 14.1453 28.4228 14.3512 28.5254L14.6522 27.949ZM33.6167 27.6096C33.2088 27.6096 32.9356 27.8148 32.7653 28.0833V27.6767H32.0525V30.9295H32.7653V29.0978C32.7653 28.557 33.0029 28.2491 33.4464 28.2491C33.5811 28.2491 33.7513 28.2846 33.8899 28.3162L34.0959 27.6451C33.9573 27.6096 33.7553 27.6096 33.6167 27.6096ZM24.5087 29.307C24.5087 30.29 25.1898 31.0006 26.2431 31.0006C26.7183 31.0006 27.0589 30.8979 27.3995 30.6295L27.0589 30.0531C26.7857 30.2584 26.5164 30.3571 26.2075 30.3571C25.6293 30.3571 25.2215 29.9505 25.2215 29.307C25.2215 28.6952 25.6293 28.2885 26.2075 28.257C26.5124 28.257 26.7857 28.3596 27.0589 28.5609L27.3995 27.9846C27.0589 27.7122 26.7183 27.6135 26.2431 27.6135C25.1898 27.6096 24.5087 28.3241 24.5087 29.307ZM31.1021 29.307V27.6806H30.3893V28.0872C30.1517 27.7832 29.8111 27.6135 29.3676 27.6135C28.4489 27.6135 27.7361 28.3241 27.7361 29.307C27.7361 30.29 28.4489 31.0006 29.3676 31.0006C29.8428 31.0006 30.1834 30.8308 30.3893 30.5269V30.9335H31.1021V29.307ZM28.4845 29.307C28.4845 28.7307 28.8568 28.257 29.4706 28.257C30.0487 28.257 30.4566 28.6991 30.4566 29.307C30.4566 29.8834 30.0487 30.3571 29.4706 30.3571C28.8607 30.3216 28.4845 29.8794 28.4845 29.307ZM19.9546 27.6096C19.0042 27.6096 18.3231 28.2885 18.3231 29.3031C18.3231 30.3216 19.0042 30.9966 19.9903 30.9966C20.4655 30.9966 20.9407 30.8624 21.3169 30.5545L20.9763 30.0452C20.7031 30.2505 20.3625 30.3847 20.0259 30.3847C19.5824 30.3847 19.1428 30.1795 19.0399 29.6071H21.4515C21.4515 29.5044 21.4515 29.4373 21.4515 29.3347C21.4832 28.2885 20.8694 27.6096 19.9546 27.6096ZM19.9546 28.2214C20.3982 28.2214 20.7031 28.4938 20.7704 28.9991H19.0715C19.1389 28.5609 19.4438 28.2214 19.9546 28.2214ZM37.6638 29.307V26.3937H36.951V28.0872C36.7134 27.7832 36.3729 27.6135 35.9294 27.6135C35.0106 27.6135 34.2978 28.3241 34.2978 29.307C34.2978 30.29 35.0106 31.0006 35.9294 31.0006C36.4046 31.0006 36.7451 30.8308 36.951 30.5269V30.9335H37.6638V29.307ZM35.0463 29.307C35.0463 28.7307 35.4185 28.257 36.0323 28.257C36.6105 28.257 37.0184 28.6991 37.0184 29.307C37.0184 29.8834 36.6105 30.3571 36.0323 30.3571C35.4185 30.3216 35.0463 29.8794 35.0463 29.307ZM11.1832 29.307V27.6806H10.4704V28.0872C10.2328 27.7832 9.89221 27.6135 9.44869 27.6135C8.52996 27.6135 7.81716 28.3241 7.81716 29.307C7.81716 30.29 8.52996 31.0006 9.44869 31.0006C9.92389 31.0006 10.2645 30.8308 10.4704 30.5269V30.9335H11.1832V29.307ZM8.53393 29.307C8.53393 28.7307 8.90617 28.257 9.51997 28.257C10.0981 28.257 10.506 28.6991 10.506 29.307C10.506 29.8834 10.0981 30.3571 9.51997 30.3571C8.90617 30.3216 8.53393 29.8794 8.53393 29.307Z"
+                                fill="white" />
+                            <path
+                                d="M15.1276 12.5657C15.1276 8.66927 16.9651 5.21105 19.7847 2.97664C17.7096 1.35017 15.092 0.367188 12.2367 0.367188C5.47287 0.367188 0 5.82295 0 12.5657C0 19.3084 5.47287 24.7642 12.2367 24.7642C15.092 24.7642 17.7096 23.7812 19.7847 22.1547C16.9612 19.9519 15.1276 16.4621 15.1276 12.5657Z"
+                                fill="white" />
+                            <path
+                                d="M39.5689 12.5657C39.5689 19.3084 34.096 24.7642 27.3322 24.7642C24.4769 24.7642 21.8593 23.7812 19.7842 22.1547C22.6394 19.9164 24.4413 16.4621 24.4413 12.5657C24.4413 8.66927 22.6038 5.21105 19.7842 2.97664C21.8553 1.35017 24.4729 0.367188 27.3282 0.367188C34.096 0.367188 39.5689 5.85848 39.5689 12.5657Z"
+                                fill="white" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_181_1553">
+                                <rect width="39.5685" height="30.6337" fill="white" transform="translate(0 0.366943)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                </a>
+                <a href="#" class="footer__pay-link">
+                    <svg width="55" height="19" viewBox="0 0 55 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_181_1559)">
+                            <path
+                                d="M35.8374 0.775818C31.9444 0.775818 28.4652 2.79956 28.4652 6.53772C28.4652 10.8252 34.6354 11.1213 34.6354 13.2754C34.6354 14.1825 33.5992 14.9943 31.8286 14.9943C29.3165 14.9943 27.4388 13.8599 27.4388 13.8599L26.6353 17.6328C26.6353 17.6328 28.7983 18.591 31.67 18.591C35.9263 18.591 39.276 16.4682 39.276 12.6656C39.276 8.13492 33.08 7.84762 33.08 5.84865C33.08 5.13811 33.9307 4.35988 35.6958 4.35988C37.6876 4.35988 39.3122 5.18489 39.3122 5.18489L40.0987 1.54139C40.0987 1.54139 38.3303 0.775818 35.8368 0.775818H35.8374ZM0.218426 1.05101L0.124023 1.60083C0.124023 1.60083 1.7618 1.90134 3.23712 2.50125C5.13671 3.18867 5.27172 3.58935 5.59171 4.8321L9.07748 18.307H13.7504L20.9492 1.05101H16.2872L11.6615 12.7834L9.77397 2.83808C9.60108 1.6999 8.72402 1.05046 7.65101 1.05046H0.218975L0.218426 1.05101ZM22.8241 1.05101L19.1671 18.307H23.6128L27.2566 1.05101H22.8241ZM47.6191 1.05101C46.5472 1.05101 45.9791 1.6267 45.5625 2.63224L39.0493 18.307H43.7113L44.613 15.6944H50.2926L50.8409 18.307H54.9545L51.3661 1.05101H47.6191ZM48.2256 5.71326L49.6076 12.1884H45.9056L48.2261 5.71326H48.2256Z"
+                                fill="white" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_181_1559">
+                                <rect width="54.8854" height="17.8697" fill="white"
+                                    transform="translate(0.0966797 0.748413)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                </a>
+                <a href="#" class="footer__pay-link">
+                    <svg width="139" height="20" viewBox="0 0 139 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_181_1561)">
+                            <mask id="mask0_181_1561" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
+                                width="139" height="32">
+                                <path d="M138.4 0.663391H0.510254V31.0719H138.4V0.663391Z" fill="white" />
+                            </mask>
+                            <g mask="url(#mask0_181_1561)">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M62.5174 14.0619C61.7519 15.0122 60.4121 15.4873 59.1681 15.4873C55.819 15.4873 54.1923 13.2067 54.1923 10.0708V4.36924H56.7759V9.9758C56.7759 11.8763 57.5414 13.1117 59.5509 13.1117C61.6561 13.1117 62.6131 11.5912 62.6131 9.59569V4.36924H65.101V14.0619C65.101 17.4829 62.9958 19.7635 59.5509 19.7635C57.7328 19.7635 56.0104 19.1934 54.6707 18.053L54.5751 17.958L56.0104 16.3426L56.1061 16.4376C57.1587 17.1028 58.3069 17.4829 59.5509 17.4829C61.4647 17.4829 62.6131 16.4376 62.6131 14.5371V14.0619H62.5174ZM49.2164 14.252C48.2595 15.2023 46.9198 15.7724 45.5801 15.7724C42.3267 15.7724 39.9345 13.2067 39.9345 9.9758C39.9345 6.83993 42.3267 4.17919 45.5801 4.17919C46.9198 4.17919 48.2595 4.74935 49.2164 5.69961V4.27421H51.7044V15.5824H49.2164V14.252ZM31.0353 11.4012H33.4275H33.906C34.6715 11.4012 35.3413 11.3062 36.0111 11.0211C36.6809 10.736 37.2551 10.3559 37.7336 9.88077C38.2121 9.40564 38.5947 8.83548 38.8818 8.1703C39.1689 7.50511 39.2646 6.83993 39.2646 6.07972C39.2646 5.3195 39.1689 4.65432 38.8818 3.98913C38.5947 3.32395 38.2121 2.75379 37.7336 2.27866C37.2551 1.80353 36.6809 1.42342 36.0111 1.13834C35.3413 0.853261 34.6715 0.663208 33.906 0.663208H28.356V15.4873H31.0353V11.4012ZM31.0353 8.74046V3.41897H33.906C34.6715 3.41897 35.2457 3.70405 35.8198 4.17919C36.3939 4.65432 36.5853 5.3195 36.5853 6.07972C36.5853 6.83993 36.2982 7.41009 35.8198 7.98024C35.2457 8.5504 34.6715 8.74046 33.906 8.74046H33.4275H31.0353ZM45.7715 13.3017C46.3457 13.3017 47.0155 13.1117 47.4939 12.8266C48.5465 12.2564 49.0251 11.1161 49.0251 9.9758C49.0251 8.74046 48.4509 7.69516 47.3983 7.02998C46.9199 6.7449 46.3457 6.64987 45.7715 6.64987C45.1974 6.64987 44.6232 6.83993 44.1448 7.12501C43.0922 7.69517 42.5181 8.83548 42.5181 10.0708C42.5181 11.2111 43.0923 12.2564 44.0492 12.9216C44.6233 13.1117 45.1974 13.3017 45.7715 13.3017Z"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M133.806 5.79464C134.859 4.65432 136.199 4.17919 137.825 4.17919H138.399V6.64987H137.347C134.955 6.64987 133.902 8.26532 133.902 10.546V15.4873H131.318V4.17919H133.902V5.79464H133.806ZM121.08 8.64543H126.917C126.917 8.45538 126.821 8.26532 126.725 8.07527C126.247 7.02998 125.194 6.45982 124.046 6.45982C122.802 6.45982 121.558 7.12501 121.175 8.36035C121.08 8.45538 121.08 8.5504 121.08 8.64543ZM95.2434 8.64543H101.08C101.08 8.45538 100.985 8.26532 100.889 8.07527C100.411 7.02998 99.3578 6.45982 98.2095 6.45982C96.9658 6.45982 95.7215 7.12501 95.3388 8.36035C95.2434 8.45538 95.2434 8.5504 95.2434 8.64543ZM82.7077 8.64543H88.5451C88.5451 8.45538 88.4491 8.26532 88.3537 8.07527C87.8749 7.02998 86.8227 6.45982 85.6744 6.45982C84.4301 6.45982 83.1865 7.12501 82.8037 8.36035C82.7077 8.45538 82.7077 8.5504 82.7077 8.64543ZM107.875 9.9758C107.875 14.5371 114.285 14.157 114.285 9.9758C114.19 5.69961 107.875 5.3195 107.875 9.9758ZM120.888 10.641C120.984 12.4465 122.419 13.3017 124.142 13.3017C125.386 13.3017 126.534 13.0166 127.587 12.3515L127.682 12.2564L129.118 13.7769L128.926 13.8719C127.491 14.9172 125.864 15.5824 124.046 15.5824C120.601 15.5824 118.209 13.2067 118.209 9.78575C118.209 6.45982 120.601 3.98913 123.951 3.98913C126.247 3.98913 128.065 5.03442 129.022 7.22003C129.404 8.07527 129.501 9.50067 129.213 10.4509V10.546H120.888V10.641ZM95.0521 10.641C95.1474 12.4465 96.5831 13.3017 98.3055 13.3017C99.5491 13.3017 100.697 13.0166 101.75 12.3515L101.846 12.2564L103.281 13.7769L103.09 13.8719C101.654 14.9172 100.028 15.5824 98.2095 15.5824C94.7646 15.5824 92.3727 13.2067 92.3727 9.78575C92.3727 6.45982 94.7646 3.98913 98.1141 3.98913C100.411 3.98913 102.228 5.03442 103.185 7.22003C103.568 8.07527 103.664 9.50067 103.377 10.4509V10.546L95.0521 10.641ZM82.5163 10.641C82.6123 12.4465 84.0473 13.3017 85.7697 13.3017C87.0141 13.3017 88.1623 13.0166 89.2146 12.3515L89.3106 12.2564L90.7456 13.7769L90.6503 13.9669C89.2146 15.0122 87.5882 15.6774 85.7697 15.6774C82.3249 15.6774 79.933 13.3017 79.933 9.88077C79.933 6.55485 82.3249 4.08416 85.6744 4.08416C87.971 4.08416 89.7887 5.12945 90.7456 7.31506C91.1284 8.1703 91.2244 9.59569 90.937 10.546V10.641H82.5163ZM74.0002 8.07527L80.2197 15.4873H76.6795L70.6507 8.07527L76.6795 0.663208H80.2197L74.0002 8.07527ZM67.6846 0.663208H70.364V15.4873H67.6846V0.663208ZM105.961 7.41009L106.056 7.22003C106.056 7.22003 106.056 7.22003 106.056 7.12501L106.152 6.93495V6.83993C106.152 6.83993 106.152 6.7449 106.247 6.7449C106.247 6.7449 106.247 6.7449 106.247 6.64987V6.55485C106.247 6.45982 106.343 6.45982 106.343 6.36479C106.343 6.36479 106.343 6.36479 106.343 6.26977C107.396 4.84437 109.023 4.08416 110.841 4.08416H111.032C114.19 4.17919 116.487 6.7449 116.487 9.88077C116.487 13.0166 114.094 15.6774 110.841 15.6774C109.597 15.6774 108.353 15.1072 107.587 14.252V19.5735H105.099V9.69072C105.099 9.02553 105.291 8.26532 105.578 7.60014V7.50511V7.41009H105.961Z"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0.510254 15.5829L7.97426 8.17065L0.510254 0.663391C2.32841 0.663391 4.24226 0.663391 6.06041 0.663391L13.5244 8.07562L6.06041 15.4879C4.24226 15.5829 2.32841 15.5829 0.510254 15.5829ZM10.3666 15.5829L17.8306 8.17065L10.3666 0.663391C12.1847 0.663391 14.0986 0.663391 15.9167 0.663391L23.4764 8.07562L16.0124 15.4879C14.0986 15.5829 12.2804 15.5829 10.3666 15.5829Z"
+                                    fill="white" />
+                            </g>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_181_1561">
+                                <rect width="138.49" height="19.1461" fill="white"
+                                    transform="translate(0.510254 0.663391)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./scripts/header.js"></script>
+    <script src="./scripts/form.js"></script>
+
+
+</body>
+
+</html>

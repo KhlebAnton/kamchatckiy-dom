@@ -489,7 +489,7 @@ input {
 
 .basket__content_card-items {
     margin-bottom: 20px;
-    max-height: 305px;
+    max-height: 375px;
     overflow-y: auto;
     margin-top: 20px;
     position: relative;
