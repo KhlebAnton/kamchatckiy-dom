@@ -3670,6 +3670,7 @@ section:first-child {
 
 .bread-crumbs__list {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     gap: 16px;
     align-items: center;
@@ -3693,7 +3694,7 @@ section:first-child {
     color: var(--black);
 }
 
-.bread-crumbs__list li::after {
+.bread-crumbs__list li::before {
     content: '';
     display: block;
     width: 6px;
@@ -3702,19 +3703,21 @@ section:first-child {
     background-color: var(--blue);
 }
 
-.bread-crumbs__list li:last-child::after {
+.bread-crumbs__list li:first-child::before {
     display: none;
 }
 
 .bread-crumbs__list li:last-child a {
     color: var(--gray1);
     pointer-events: none;
+   
 }
 
 .catalog__info {
     display: flex;
     align-items: end;
     gap: 24px;
+    flex-wrap: wrap;
 }
 
 .catalog_title {
