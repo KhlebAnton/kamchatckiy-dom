@@ -119,12 +119,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
     btnFilter.addEventListener('click', ()=> {
         filterMenu.classList.add('open');
+        toggleScroll(false)
+
     })
 
     btnCloseFilter.addEventListener('click', ()=> {
         filterMenu.classList.remove('open');
+        toggleScroll(true)
+
     })
     applyBtn.addEventListener('click', ()=> {
         filterMenu.classList.remove('open');
+        toggleScroll(true)
+
     })
 });
