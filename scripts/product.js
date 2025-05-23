@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
             newVideo.controls = false;
             newVideo.muted = true;
             newVideo.loop = true;
-            newVideo.playsinline = true;
+            newVideo.playsInline = true;
             mediaContainer.appendChild(newVideo);
         } else if (img) {
             const newImg = document.createElement('img');
