@@ -143,13 +143,13 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Находим все счетчики на странице
-    const counters = document.querySelectorAll('.card-product_page__counter');
+    const counters = document.querySelectorAll('.card-product__counter');
 
     // Обрабатываем каждый счетчик
     counters.forEach(counter => {
-        const minusBtn = counter.querySelector('.card-product_page__counter_minus');
-        const plusBtn = counter.querySelector('.card-product_page__counter_plus');
-        const countDisplay = counter.querySelector('.card-product_page__counter_count');
+        const minusBtn = counter.querySelector('.card-product__counter_minus');
+        const plusBtn = counter.querySelector('.card-product__counter_plus');
+        const countDisplay = counter.querySelector('.card-product__counter_count');
 
         // Определяем тип счетчика (шт или масса)
         const isMassCounter = counter.classList.contains('counter_mass');

@@ -108,11 +108,11 @@ searchInput.addEventListener('blur', () => {
     startAnimation();
     // searchContent.classList.remove('open')
 });
-document.addEventListener('click', (e)=> {
+document.addEventListener('click', (e) => {
     if (!searchContent.contains(e.target) && !searchLabel.contains(e.target)) {
-         searchContent.classList.remove('open')
+        searchContent.classList.remove('open')
     }
-    
+
 })
 searchInput.addEventListener('input', function () {
     if (this.value.length > 0) {
@@ -230,7 +230,7 @@ function closeAllMenu() {
     } else {
         toggleScroll(true);
         catalogMobileContent.classList.remove('open');
-         subcategoryMenu.classList.remove('open')
+        subcategoryMenu.classList.remove('open')
     }
 
 }
@@ -257,46 +257,71 @@ categoryMobilItems.forEach(sub => {
     sub.addEventListener('click', () => {
         let categ = sub.getAttribute('data-category');
         categoryContentMobile.forEach(cont => cont.classList.remove('open'));
-        categoryContentMobile.forEach(cont=> {
-            if(cont.getAttribute('data-category').toLowerCase() === categ.toLowerCase()) {
+        categoryContentMobile.forEach(cont => {
+            if (cont.getAttribute('data-category').toLowerCase() === categ.toLowerCase()) {
                 cont.classList.add('open')
             };
         });
         subcategoryMenu.classList.add('open')
     })
 });
-btnBackSubcategory.addEventListener('click', ()=> {
-     subcategoryMenu.classList.remove('open')
+btnBackSubcategory.addEventListener('click', () => {
+    subcategoryMenu.classList.remove('open')
 })
 
 
 // basket
 const basketContainer = document.querySelector('.basket__content');
-    
-    // Обработчик для всего контейнера корзины (делегирование событий)
-    basketContainer.addEventListener('click', function(e) {
-      const target = e.target;
-      
-      // Обработка кнопки "+"
-      if (target.classList.contains('product_counter__plus')) {
+
+// Обработчик для всего контейнера корзины (делегирование событий)
+basketContainer.addEventListener('click', function (e) {
+    const target = e.target;
+
+    // Обработка кнопки "+"
+    if (target.classList.contains('product_counter__plus')) {
         const counter = target.closest('.prouct_counter').querySelector('.product_counter__count');
         counter.textContent = parseInt(counter.textContent) + 1;
-    
-      }
-      
-      // Обработка кнопки "-"
-      if (target.classList.contains('product_counter__minus')) {
+
+    }
+
+    // Обработка кнопки "-"
+    if (target.classList.contains('product_counter__minus')) {
         const counter = target.closest('.prouct_counter').querySelector('.product_counter__count');
         const currentValue = parseInt(counter.textContent);
-        
+
         if (currentValue > 1) {
-          counter.textContent = currentValue - 1;
-         
-        } 
-      }
-    });
-    
-  
+            counter.textContent = currentValue - 1;
+
+        }
+    }
+});
+
+// Функция для определения ширины скроллбара
+function getScrollbarWidth() {
+    // Создаем временный элемент для измерения
+    const outer = document.createElement('div');
+    outer.style.visibility = 'hidden';
+    outer.style.overflow = 'scroll'; // Принудительно показываем скролл
+    document.body.appendChild(outer);
+
+    // Создаем внутренний элемент
+    const inner = document.createElement('div');
+    outer.appendChild(inner);
+
+    // Вычисляем разницу в ширине
+    const scrollbarWidth = outer.offsetWidth - inner.offsetWidth;
+
+    // Удаляем временные элементы
+    outer.parentNode.removeChild(outer);
+
+    return scrollbarWidth;
+}
+
+// Получаем ширину скроллбара
+const scrollbarWidth = getScrollbarWidth();
+
+// Применяем значение к элементам
+document.documentElement.style.setProperty('--scrollbar-width', `${scrollbarWidth}px`);
 
 document.addEventListener('DOMContentLoaded', () => {
     startAnimation();
