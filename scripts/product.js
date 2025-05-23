@@ -72,8 +72,9 @@ document.addEventListener('DOMContentLoaded', function () {
             newVideo.src = video.src;
             newVideo.autoplay = true;
             newVideo.controls = false;
-            newVideo.muted = false;
+            newVideo.muted = true;
             newVideo.loop = true;
+            newVideo.playsinline = true;
             mediaContainer.appendChild(newVideo);
         } else if (img) {
             const newImg = document.createElement('img');
