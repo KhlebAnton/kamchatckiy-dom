@@ -3971,6 +3971,7 @@ section:first-child {
     border: none;
     font-size: 18px;
     transition: 0.2s;
+    line-height: 140%;
 }
 
 .filter__button--apply {
