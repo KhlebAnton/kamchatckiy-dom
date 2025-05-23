@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const swiperCardProduct = new Swiper('.card-product_page_swiper-container', {
         slidesPerView: 'auto',
-        direction: 'vertical',
+        direction: 'horizontal',
         mousewheel: true,
         spaceBetween: 8,
         navigation: {
@@ -11,14 +11,48 @@ document.addEventListener('DOMContentLoaded', function () {
         breakpoints: {
             1220: {
                 slidesPerView: 'auto',
+                direction: 'vertical',
+                spaceBetween: 16
+            },
+            1000: {
+                direction: 'vertical',
+                slidesPerView: 'auto',
                 spaceBetween: 16
             }
         },
     });
 
+    window.addEventListener('resize', function() {
+        swiperCardProduct.update();
+    });
+
     const mediaContainer = document.querySelector('.product_card__media');
     const previewSlides = document.querySelectorAll('.swiper-slide .card-product__preview');
     let currentSlideIndex = 0;
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    // Добавляем обработчики свайпа
+    mediaContainer.addEventListener('touchstart', function(e) {
+        touchStartX = e.changedTouches[0].screenX;
+    }, false);
+
+    mediaContainer.addEventListener('touchend', function(e) {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    }, false);
+
+    function handleSwipe() {
+        const swipeThreshold = 50; // Минимальное расстояние свайпа для срабатывания
+        
+        if (touchEndX < touchStartX - swipeThreshold) {
+            // Свайп влево - следующий слайд
+            navigateMedia(1);
+        } else if (touchEndX > touchStartX + swipeThreshold) {
+            // Свайп вправо - предыдущий слайд
+            navigateMedia(-1);
+        }
+    }
 
     function updateMediaContent(index) {
         previewSlides.forEach(slide => {
@@ -49,13 +83,9 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         currentSlideIndex = index;
-
         swiperCardProduct.slideTo(index);
-
         addMediaNavigation();
     }
-
-
 
     function addMediaNavigation() {
         const navContainer = document.createElement('div');
@@ -64,14 +94,12 @@ document.addEventListener('DOMContentLoaded', function () {
         const prevBtn = document.createElement('div');
         prevBtn.className = 'media-nav-btn media-prev-btn';
 
-
         const counter = document.createElement('div');
         counter.className = 'media-slide-counter';
         counter.textContent = currentSlideIndex + 1;
 
         const nextBtn = document.createElement('div');
         nextBtn.className = 'media-nav-btn media-next-btn';
-
 
         navContainer.appendChild(prevBtn);
         navContainer.appendChild(counter);
