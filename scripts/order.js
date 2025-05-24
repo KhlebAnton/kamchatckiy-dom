@@ -179,6 +179,12 @@ document.addEventListener('DOMContentLoaded', function () {
 function showTab(index) {
     // Скрыть все вкладки
     contents.forEach(content => content.classList.remove('open'));
+    window.scrollTo(
+      {
+        top:0,
+         behavior: 'smooth'
+      }
+    )
 
     // Показать текущую вкладку
     contents[index].classList.add('open');
