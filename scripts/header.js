@@ -332,3 +332,14 @@ document.querySelectorAll('input[type="tel"]').forEach(input => {
         e.target.value = !x[2] ? '+7' : `+7(${x[2]}${x[3] ? `)-${x[3]}` : ''}${x[4] ? `-${x[4]}` : ''}${x[5] ? `-${x[5]}` : ''}`;
     });
 });
+
+const inputsAll = document.querySelectorAll('input:not(#search-input)');
+
+inputsAll.forEach(input => {
+    const updateFilledState = () => {
+      input.classList.toggle('filled', input.value.trim().length > 0);
+    };
+    input.addEventListener('change',updateFilledState)
+    updateFilledState()
+})
+    
