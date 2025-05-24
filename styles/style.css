@@ -6951,7 +6951,12 @@ section:first-child {
 .personal_data.open {
     display: block;
 }
-
+.personal_bonus {
+    display: none;
+}
+.personal_bonus.open {
+    display: block;
+}
 .personal_bonus__card {
     color: var(--white);
 
