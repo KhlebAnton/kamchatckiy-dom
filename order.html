@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/swiper-bundle.min.css">
+
 </head>
 
 <body>
@@ -2083,132 +2084,365 @@
                         Корзина
                     </a>
                 </li>
-
+                <li>
+                    <a href="#">
+                        Оформление заказа
+                    </a>
+                </li>
             </ol>
         </nav>
-        <section class="section section_basket_page">
-            <div class="basket_page__content container">
+        <section class="section section_order_page">
+            <div class="order_page__content container">
                 <div class="section__top_info-wrapper">
                     <div class="section__top_info">
                         <h1 class="section__top_title">
-                            Корзина
+                            Оформление заказа
                         </h1>
-                        <div class="section__top__count">
-                            3 товарa
-                        </div>
                     </div>
-                    <div class="btn_basket_reset">Очистить корзину</div>
                 </div>
-                <div class="basket_page__grid">
-                    <div class="basket_page__product-items">
-                        <div class="basket_page__product-item">
-                            <div class="basket_page__product-item__img">
-                                <img src="./img/product/tea.png" alt="">
+
+                <div class="order_page__grid">
+                    <div class="order__tabs">
+                            <div class="order__tab active" data-tab="content">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 18.5H20" stroke="#001530" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M4 12.5H20" stroke="#001530" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M4 6.5H20" stroke="#001530" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                                <span>
+                                    Состав заказа
+                                </span>
                             </div>
-                            <div class="basket_page__product-item-info">
-                                <div class="basket_page__product-item-info__top">
-                                    <div class="basket_page__product-item-title">
-                                        Иван-чай «Сказочная Камчатка»
-                                    </div>
-                                    <div class="card-product__stat">35 гр.</div>
+                            <div class="order__tab" data-tab="delivery">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19 10.8636C19 16.5909 12 21.5 12 21.5C12 21.5 5 16.5909 5 10.8636C5 8.91068 5.7375 7.03771 7.05025 5.65676C8.36301 4.27581 10.1435 3.5 12 3.5C13.8565 3.5 15.637 4.27581 16.9497 5.65676C18.2625 7.03771 19 8.91068 19 10.8636Z"
+                                        stroke="#001530" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M12 13.5C13.6569 13.5 15 12.1569 15 10.5C15 8.84315 13.6569 7.5 12 7.5C10.3431 7.5 9 8.84315 9 10.5C9 12.1569 10.3431 13.5 12 13.5Z"
+                                        stroke="#001530" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                                <span> Способ доставки</span>
+                            </div>
+                            <div class="order__tab" data-tab="pay">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.5 5.5H4.5C3.94772 5.5 3.5 5.94772 3.5 6.5V18.5C3.5 19.0523 3.94772 19.5 4.5 19.5H20.5C21.0523 19.5 21.5 19.0523 21.5 18.5V6.5C21.5 5.94772 21.0523 5.5 20.5 5.5Z"
+                                        stroke="#001530" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M7.5 15.5H11.5" stroke="#001530" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M3.5 11.5H21.5" stroke="#001530" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M3.5 9.5H21.5" stroke="#001530" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                                <span>Способ оплаты</span>
+                            </div>
+                            <div class="order__tab" data-tab="data">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12.5" cy="7.5" r="4" stroke="#001530" stroke-width="1.5" />
+                                    <path
+                                        d="M16.5002 21.5H8.50025C6.29111 21.5 4.34039 19.5616 5.49201 17.6763C6.61806 15.833 8.79744 14.5 12.5002 14.5C16.2031 14.5 18.3824 15.833 19.5085 17.6763C20.6601 19.5616 18.7094 21.5 16.5002 21.5Z"
+                                        stroke="#001530" stroke-width="1.5" />
+                                </svg>
+
+                                <span> Данные покупателя</span>
+                            </div>
+                        </div>
+                    <div class="order_content-left">
+                        
+                        <div class="order_content basket_page__product-items" data-content="content">
+                            <div class="basket_page__product-item">
+                                <div class="basket_page__product-item__img">
+                                    <img src="./img/product/tea.png" alt="">
                                 </div>
-                                <div class="basket_page__product-item-info__bottom">
-                                    <div class="basket_page__product-prices">
-                                        <div class="card-product__price">450 ₽ / шт. </div>
-
-                                        <!-- <div class="card-product__price_old">940 ₽ / шт. </div> -->
-                                        <div class="card-product__price_hint">Цена за 1 шт. </div>
-                                    </div>
-                                    <div class="basket_page__product-prices_all">
-                                        <div class="card-product__counter">
-                                            <div class="card-product__counter_minus"></div>
-                                            <div class="card-product__counter_count">1</div>
-                                            <div class="card-product__counter_plus"></div>
-
+                                <div class="basket_page__product-item-info">
+                                    <div class="basket_page__product-item-info__top">
+                                        <div class="basket_page__product-item-title">
+                                            Иван-чай «Сказочная Камчатка»
                                         </div>
-                                        <div class="card-product__price">450 ₽ / шт. </div>
-                                        <div class="card-product_basket-btn"></div>
+                                        <div class="card-product__stat">Количество: 1 шт.</div>
+                                    </div>
+                                    <div class="basket_page__product-item-info__bottom">
+                                        <div class="basket_page__product-prices">
+                                            <div class="card-product__price">450 ₽ / шт. </div>
+
+                                            <!-- <div class="card-product__price_old">940 ₽ / шт. </div> -->
+                                            <div class="card-product__price_hint">Цена за 1 шт. </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket_page__product-item">
+                                <div class="basket_page__product-item__img">
+                                    <img src="./img/product/ikra.png" alt="">
+                                </div>
+                                <div class="basket_page__product-item-info">
+                                    <div class="basket_page__product-item-info__top">
+                                        <div class="basket_page__product-item-title">
+                                            Икра лососевая Кижуча весовая, 500 гр.
+                                        </div>
+                                        <div class="card-product__stat">Количество: 1 шт.</div>
+                                    </div>
+                                    <div class="basket_page__product-item-info__bottom">
+                                        <div class="basket_page__product-prices">
+                                            <div class="card-product__price">6 750 ₽ / шт. </div>
+
+                                            <!-- <div class="card-product__price_old">940 ₽ / шт. </div> -->
+                                            <div class="card-product__price_hint">Цена за 1 шт. </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket_page__product-item">
+                                <div class="basket_page__product-item__img">
+                                    <img src="./img/product/nerka.png" alt="">
+                                </div>
+                                <div class="basket_page__product-item-info">
+                                    <div class="basket_page__product-item-info__top">
+                                        <div class="basket_page__product-item-title">
+                                            Нерка подкопченная ломтики 150 гр, Камчатка
+                                        </div>
+                                        <div class="card-product__stat">Количество: 1 шт.</div>
+                                    </div>
+                                    <div class="basket_page__product-item-info__bottom">
+                                        <div class="basket_page__product-prices">
+                                            <div class="card-product__price">840 ₽ / шт. </div>
+
+
+                                            <div class="card-product__price_hint">Цена за 1 шт. </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="order_content delivery__content" data-content="delivery">
+                            <div class="delivery__item ">
+                                <div class="delivery__item_top">
+                                    <div class="delivery__item-title">
+                                        Самовывоз
+                                    </div>
+                                    <div class="delivery__item-hints">
+                                        <div class="delivery__item-hint">Бесплатно</div>
+                                    </div>
+                                </div>
+                                <div class="delivery__item_bottom">
+                                    <p>
+                                        Вы можете самостоятельно забрать <br> заказ из нашего магазина по адресу:
+                                    </p>
+                                    <div class="delivery_adress">
+                                        МО, Красногорский район, с. Ильинское, ул. Ленина, 29/1
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="delivery__item">
+                                <div class="delivery__item_top">
+                                    <div class="delivery__item-title">
+                                        Курьерская доставка
+                                    </div>
+                                    <div class="delivery__item-hints">
+                                        <div class="delivery__item-hint">от 300 ₽ </div>
+                                        <div class="delivery__item-hint">1-2 дня</div>
+                                    </div>
+                                </div>
+                                <div class="delivery__item_bottom delivery__item_hidden">
+                                    <div class="input_map_label">
+                                        Выберите адрес:
+                                    </div>
+                                    <div class="map_input">
+                                        <label class="form__label">
+                                            <input class="form__input input_map" name="adress" type="text">
+                                            <span class="form__input-placeholder">Введите название улицы, населенного
+                                                пункта...</span>
+                                            <span class="input_err">Мы не доставляем на этот адрес. Попробуйте выбрать
+                                                другой</span>
+                                        </label>
+                                        <div class="map_input-suggestions">
+                                            <div class="map_input-suggestions_item">
+                                                ул. Петра Романова
+                                            </div>
+                                            <div class="map_input-suggestions_item">
+                                                ул. Петра Романова 22
+                                            </div>
+                                            <div class="map_input-suggestions_item">
+                                                ул. Петра Романова 2
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="delivery__map-container">
+                                        <img src="./img/map.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="delivery__item">
+                                <div class="delivery__item_top">
+                                    <div class="delivery__item-title">
+                                        Экспресс-доставка по Москве
+                                    </div>
+                                    <div class="delivery__item-hints">
+                                        <div class="delivery__item-hint">2 500 ₽ </div>
+                                        <div class="delivery__item-hint">2-6 часов</div>
+                                    </div>
+                                </div>
+                                <div class="delivery__item_bottom delivery__item_hidden">
+                                    <div class="input_map_label">
+                                        Выберите адрес:
+                                    </div>
+                                    <div class="map_input">
+                                        <label class="form__label">
+                                            <input class="form__input input_map" name="adress" type="text">
+                                            <span class="form__input-placeholder">Введите название улицы, населенного
+                                                пункта...</span>
+                                            <span class="input_err">Мы не доставляем на этот адрес. Попробуйте выбрать
+                                                другой</span>
+                                        </label>
+                                        <div class="map_input-suggestions">
+                                            <div class="map_input-suggestions_item">
+                                                ул. Петра Романова
+                                            </div>
+                                            <div class="map_input-suggestions_item">
+                                                ул. Петра Романова 22
+                                            </div>
+                                            <div class="map_input-suggestions_item">
+                                                ул. Петра Романова 2
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="delivery__map-container">
+                                        <img src="./img/map.png" alt="">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="basket_page__product-item">
-                            <div class="basket_page__product-item__img">
-                                <img src="./img/product/ikra.png" alt="">
-                            </div>
-                            <div class="basket_page__product-item-info">
-                                <div class="basket_page__product-item-info__top">
-                                    <div class="basket_page__product-item-title">
-                                        Икра лососевая Кижуча весовая, 500 гр.
-                                    </div>
-                                    <div class="card-product__stat">500 гр.</div>
+                        <div class="order_content pay__content" data-content="pay">
+                            <div class="pay_item">
+                                <div class="pay_item-title">
+                                    Наличные
                                 </div>
-                                <div class="basket_page__product-item-info__bottom">
-                                    <div class="basket_page__product-prices">
-                                        <div class="card-product__price">6 750 ₽ / шт. </div>
-
-                                        <!-- <div class="card-product__price_old">940 ₽ / шт. </div> -->
-                                        <div class="card-product__price_hint">Цена за 1 шт. </div>
-                                    </div>
-                                    <div class="basket_page__product-prices_all">
-                                        <div class="card-product__counter">
-                                            <div class="card-product__counter_minus"></div>
-                                            <div class="card-product__counter_count">1</div>
-                                            <div class="card-product__counter_plus"></div>
-
-                                        </div>
-                                        <div class="card-product__price">6 750 ₽ / шт. </div>
-                                        <div class="card-product_basket-btn"></div>
-                                    </div>
+                            </div>
+                            <div class="pay_item">
+                                <div class="pay_item-title">
+                                    Банковская карта
+                                </div>
+                                <p class="pay_item-text">
+                                    После подтверждения заказа, вам придет ссылка на оплату.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="order_content data__content" data-content="data">
+                            <div class="order-data_tabs">
+                                <label class="label_radio js-radio-label">
+                                    <input type="radio" name="data-order" checked value="person">
+                                    <div class="radio-marker"></div>
+                                    <span>Физическое лицо</span>
+                                </label>
+                                <label class="label_radio js-radio-label" value="legal">
+                                    <input type="radio" name="data-order">
+                                    <div class="radio-marker"></div>
+                                    <span>Юридическое лицо</span>
+                                </label>
+                            </div>
+                            <div class="order-data__content">
+                                <div class="order-data__content_pers">
+                                    <label class="form__label">
+                                        <input class="form__input" name="name" type="text" required="">
+                                        <span class="form__input-placeholder">Имя и Фамилия</span>
+                                        <span class="input_err">Заполните поле</span>
+                                    </label>
+                                    <label class="form__label">
+                                        <input class="form__input" name="phone" type="tel" required="">
+                                        <span class="form__input-placeholder">Телефон</span>
+                                        <span class="input_err">Заполните поле</span>
+                                    </label>
+                                    <label class="form__label all_column">
+                                        <input class="form__input" name="surname" type="email" required="">
+                                        <span class="form__input-placeholder">E-mail</span>
+                                        <span class="input_err">Заполните поле</span>
+                                    </label>
+                                    <label class="form__label all_column">
+                                        <input class="form__input" name="surname" type="text">
+                                        <span class="form__input-placeholder">Комментарий</span>
+                                    </label>
+                                </div>
+                                <div class="order-data__content_legal" style="display: none;">
+                                    <label class="form__label">
+                                        <input class="form__input" name="name" type="text" required="">
+                                        <span class="form__input-placeholder">Название компании</span>
+                                        <span class="input_err">Заполните поле</span>
+                                    </label>
+                                    <label class="form__label">
+                                        <input class="form__input" name="name" type="text">
+                                        <span class="form__input-placeholder">Юридический адрес </span>
+                                    </label>
+                                    <label class="form__label">
+                                        <input class="form__input" name="name" type="text">
+                                        <span class="form__input-placeholder">ИНН </span>
+                                    </label>
+                                    <label class="form__label">
+                                        <input class="form__input" name="name" type="text">
+                                        <span class="form__input-placeholder">КПП</span>
+                                    </label>
+                                    <label class="form__label">
+                                        <input class="form__input" name="name" type="text" required="">
+                                        <span class="form__input-placeholder">Контактное лицо</span>
+                                        <span class="input_err">Заполните поле</span>
+                                    </label>
+                                    <label class="form__label">
+                                        <input class="form__input" name="name" type="email" required="">
+                                        <span class="form__input-placeholder">E-mail</span>
+                                        <span class="input_err">Заполните поле</span>
+                                    </label>
+                                    <label class="form__label">
+                                        <input class="form__input" name="phone" type="tel" required="">
+                                        <span class="form__input-placeholder">Телефон</span>
+                                        <span class="input_err">Заполните поле</span>
+                                    </label>
+                                    <label class="form__label">
+                                        <input class="form__input" name="name" type="text">
+                                        <span class="form__input-placeholder">Факс</span>
+                                    </label>
+                                    <label class="form__label all_column">
+                                        <input class="form__input" name="surname" type="text">
+                                        <span class="form__input-placeholder">Город</span>
+                                    </label>
+                                    <label class="form__label all_column">
+                                        <input class="form__input" name="surname" type="text">
+                                        <span class="form__input-placeholder">Комментарий</span>
+                                    </label>
                                 </div>
                             </div>
                         </div>
-                        <div class="basket_page__product-item">
-                            <div class="basket_page__product-item__img">
-                                <img src="./img/product/nerka.png" alt="">
-                            </div>
-                            <div class="basket_page__product-item-info">
-                                <div class="basket_page__product-item-info__top">
-                                    <div class="basket_page__product-item-title">
-                                        Нерка подкопченная ломтики 150 гр, Камчатка
-                                    </div>
-                                    <div class="card-product__stat">150 гр.</div>
-                                </div>
-                                <div class="basket_page__product-item-info__bottom">
-                                    <div class="basket_page__product-prices">
-                                        <div class="card-product__price">840 ₽ / шт. </div>
-
-                                        <div class="card-product__price_old">940 ₽ / шт. </div>
-                                        <div class="card-product__price_hint">Цена за 1 шт. </div>
-                                    </div>
-                                    <div class="basket_page__product-prices_all">
-                                        <div class="card-product__counter">
-                                            <div class="card-product__counter_minus"></div>
-                                            <div class="card-product__counter_count">1</div>
-                                            <div class="card-product__counter_plus"></div>
-
-                                        </div>
-                                        <div class="card-product__price">840 ₽ / шт. </div>
-                                        <div class="card-product_basket-btn"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
-                    <div class="btn_basket_reset btn-busket_reset_bottom">Очистить корзину</div>
+
                     <div class="basket_page__promo_container">
-                        <div class="promocode_container promocode_disabled promocode_ok promocode_err">
+                        <div class="promocode_container">
                             <div class="promo_disabled_alert">
-                                    <p class="disabled_alert-title">
-                                        Добавьте товаров <br>
-                                        еще на <span>800 ₽</span>
-                                    </p>
-                                    <p class="disabled_alert-text">
-                                        Минимальная сумма заказа: 
-                                        <span>8000 ₽</span>
-                                    </p>
-                                </div>
+                                <p class="disabled_alert-title">
+                                    Добавьте товаров <br>
+                                    еще на <span>800 ₽</span>
+                                </p>
+                                <p class="disabled_alert-text">
+                                    Минимальная сумма заказа:
+                                    <span>8000 ₽</span>
+                                </p>
+                            </div>
                             <form class="form_promo">
                                 <label class="promo_label">
                                     <input type="text" placeholder="Введите промокод" required>
@@ -2221,255 +2455,43 @@
                                 <span class="promocode__stat_sale">- 20 ₽ </span>
                             </div>
                             <div class="promocode__stat">
+                                <span>Товары</span>
+                                <span>16 950 ₽ </span>
+                            </div>
+                            <div class="promocode__stat">
                                 <span>Вес</span>
                                 <span>685 гр.</span>
+                            </div>
+                            <div class="promocode__stat">
+                                <span>Доставка</span>
+                                <span>550 ₽ </span>
+                            </div>
+                            <div class="promocode__stat">
+                                <span>Срок</span>
+                                <span>1-2 дня</span>
                             </div>
                             <div class="promocode__stat stat-all-price">
                                 <span>Итого</span>
                                 <span class="promocode__stat_all-price">8 040 ₽ </span>
                             </div>
                             <div class="btn btn-primary btn_promocode">Оформить заказ</div>
+                            <div class="order-error-message" style="display: none; color: var(--red);"></div>
+                        </div>
+                    </div>
+
+                    <div class="order_nav_btns">
+                        <div class="btn btn-secondary  order_nav_btn order_nav_btn__prev">
+                            Назад
+                        </div>
+                        <div class=" btn btn-primary order_nav_btn order_nav_btn__next">
+                            Далее
                         </div>
                     </div>
                 </div>
 
             </div>
         </section>
-        <section class="section section_recent-product">
-            <div class="recent-products__content container">
-                <div class="section__top">
-                    <h2 class="section__title">Вы недавно смотрели</h2>
-                    <div class="swiper-nav">
-                        <div class="swiper-button-custom-prev"></div>
-                        <div class="swiper-button-custom-next"></div>
-                    </div>
-                </div>
-                <div class="recent-product_swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="card-product">
-                                <div class="card-product__like"></div>
-                                <div class="card-product__top-hint">
-                                    <div class="card-product_hint hint-rec">
-                                        Рекомендуем
-                                    </div>
-                                    <div class="card-product_hint hint-new">
-                                        Новинка
-                                    </div>
 
-                                </div>
-                                <a href="#" class="card-product__img">
-                                    <img src="./img/product/kotlet.png" alt="">
-                                </a>
-                                <div class="card-product__info">
-                                    <div class="card-product__top">
-                                        <a href="#" class="card-product__title">
-                                            Тельное рыбное «Камчатское»
-                                        </a>
-                                        <div class="card-product__stat">500 гр.</div>
-                                        <div class="card-product__price_group">
-                                            <div class="card-product__price">6 750 ₽ / шт. </div>
-                                            <div class="card-product__price_old"></div>
-                                        </div>
-                                    </div>
-                                    <div class="card-product__btn-group">
-                                        <div class="btn btn-primary btn_card_basket">В корзину</div>
-                                        <div class="btn btn-primary btn_card_basket_counter">
-                                            <div class="btn_card_basket_counter_minus">
-
-                                            </div>
-                                            <div class="btn_card_basket_counter_count">
-                                                1
-                                            </div>
-                                            <div class="btn_card_basket_counter_plus">
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card-product">
-                                <div class="card-product__like"></div>
-                                <div class="card-product__top-hint">
-                                    <div class="card-product_hint hint-new">
-                                        Новинка
-                                    </div>
-
-                                </div>
-
-                                <a href="#" class="card-product__img">
-                                    <img src="./img/product/sirop.png" alt="">
-                                    <div class="card-product_discount">-20%</div>
-                                </a>
-                                <div class="card-product__info">
-                                    <div class="card-product__top">
-                                        <a href="#" class="card-product__title">
-                                            Сироп "Гордость Камчатки" без сахара, на основе топинамбура, 250...
-                                        </a>
-                                        <div class="card-product__stat">250 гр.</div>
-                                        <div class="card-product__price_group">
-                                            <div class="card-product__price">500 ₽ / шт. </div>
-                                            <div class="card-product__price_old">600 ₽ / шт. </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="card-product__btn-group">
-                                        <div class="btn btn-primary btn_card_basket">В корзину</div>
-                                        <div class="btn btn-primary btn_card_basket_counter">
-                                            <div class="btn_card_basket_counter_minus">
-
-                                            </div>
-                                            <div class="btn_card_basket_counter_count">
-                                                1
-                                            </div>
-                                            <div class="btn_card_basket_counter_plus">
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card-product">
-                                <div class="card-product__like"></div>
-                                <div class="card-product__top-hint">
-                                    <div class="card-product_hint hint-rec">
-                                        Рекомендуем
-                                    </div>
-                                    <div class="card-product_hint hint-new">
-                                        Новинка
-                                    </div>
-
-                                </div>
-                                <a href="#" class="card-product__img">
-                                    <img src="./img/product/vulkan.png" alt="">
-                                </a>
-                                <div class="card-product__info">
-                                    <div class="card-product__top">
-                                        <a href="#" class="card-product__title">
-                                            Конфеты шоколадные «Вулканы Камчатки»
-                                        </a>
-                                        <div class="card-product__stat">150 гр.</div>
-                                        <div class="card-product__price_group">
-                                            <div class="card-product__price">790 ₽ / шт. </div>
-                                            <div class="card-product__price_old"></div>
-                                        </div>
-                                    </div>
-                                    <div class="card-product__btn-group">
-                                        <div class="btn btn-primary btn_card_basket">В корзину</div>
-                                        <div class="btn btn-primary btn_card_basket_counter">
-                                            <div class="btn_card_basket_counter_minus">
-
-                                            </div>
-                                            <div class="btn_card_basket_counter_count">
-                                                1
-                                            </div>
-                                            <div class="btn_card_basket_counter_plus">
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card-product">
-                                <div class="card-product__like"></div>
-                                <div class="card-product__top-hint">
-                                    <div class="card-product_hint hint-rec">
-                                        Рекомендуем
-                                    </div>
-                                    <div class="card-product_hint hint-new">
-                                        Новинка
-                                    </div>
-                                    <div class="card-product_hint hint-fresh">
-                                        Вылов 2025
-                                    </div>
-
-                                </div>
-                                <a href="#" class="card-product__img">
-                                    <img src="./img/product/krevetka.png" alt="">
-                                    <div class="card-product_discount">-20%</div>
-                                </a>
-                                <div class="card-product__info">
-                                    <div class="card-product__top">
-                                        <a href="#" class="card-product__title">
-                                            Креветка гребенчатая Ботан сырая, 500 гр.
-                                        </a>
-                                        <div class="card-product__stat">500 гр.</div>
-                                        <div class="card-product__price_group">
-                                            <div class="card-product__price">2 725 ₽ / уп. </div>
-                                            <div class="card-product__price_old">3 270 ₽ / уп. </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-product__btn-group">
-                                        <div class="btn btn-primary btn_card_basket">В корзину</div>
-                                        <div class="btn btn-primary btn_card_basket_counter">
-                                            <div class="btn_card_basket_counter_minus">
-
-                                            </div>
-                                            <div class="btn_card_basket_counter_count">
-                                                1
-                                            </div>
-                                            <div class="btn_card_basket_counter_plus">
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card-product">
-                                <div class="card-product__like"></div>
-                                <div class="card-product__top-hint">
-                                    <div class="card-product_hint hint-rec">
-                                        Рекомендуем
-                                    </div>
-                                    <div class="card-product_hint hint-new">
-                                        Новинка
-                                    </div>
-
-                                </div>
-                                <a href="#" class="card-product__img">
-                                    <img src="./img/product/kotlet.png" alt="">
-                                </a>
-                                <div class="card-product__info">
-                                    <div class="card-product__top">
-                                        <a href="#" class="card-product__title">
-                                            Тельное рыбное «Камчатское»
-                                        </a>
-                                        <div class="card-product__stat">500 гр.</div>
-                                        <div class="card-product__price_group">
-                                            <div class="card-product__price">2 725 ₽ / уп. </div>
-                                            <div class="card-product__price_old"> </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-product__btn-group">
-                                        <div class="btn btn-primary btn_card_basket">В корзину</div>
-                                        <div class="btn btn-primary btn_card_basket_counter">
-                                            <div class="btn_card_basket_counter_minus">
-
-                                            </div>
-                                            <div class="btn_card_basket_counter_count">
-                                                1
-                                            </div>
-                                            <div class="btn_card_basket_counter_plus">
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
     <!-- начало окон модальных -->
     <div class="modal modal-auth">
@@ -2831,12 +2853,10 @@
 
     <script src="./scripts/header.js"></script>
     <script src="./scripts/form.js"></script>
-    <script src="./scripts/swiper-bundle.min.js"></script>
-    <script src="./scripts/recent_swiper.js"></script>
-    <script src="./scripts/product-counter.js"></script>
 
-    <script src="./scripts/basket-page.js"></script>
 
+
+    <script src="./scripts/order.js"></script>
 </body>
 
 </html>

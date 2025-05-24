@@ -319,11 +319,16 @@ function getScrollbarWidth() {
 
 // Получаем ширину скроллбара
 const scrollbarWidth = getScrollbarWidth();
-
-// Применяем значение к элементам
 document.documentElement.style.setProperty('--scrollbar-width', `${scrollbarWidth}px`);
 
 document.addEventListener('DOMContentLoaded', () => {
     startAnimation();
     updateCategoriesContent()
+});
+
+document.querySelectorAll('input[type="tel"]').forEach(input => {
+    input.addEventListener('input', function(e) {
+        let x = e.target.value.replace(/\D/g, '').match(/(\d{0,1})(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})/);
+        e.target.value = !x[2] ? '+7' : `+7(${x[2]}${x[3] ? `)-${x[3]}` : ''}${x[4] ? `-${x[4]}` : ''}${x[5] ? `-${x[5]}` : ''}`;
+    });
 });

@@ -36,3 +36,58 @@ function updateCounter(display, isMass, change) {
         display.textContent = Math.round(value);
     }
 }
+
+  // Обработчик промокода
+  const promoForm = document.querySelector('.form_promo');
+  const promoInput = promoForm.querySelector('input');
+  const promoBtn = promoForm.querySelector('.promo_btn');
+  const promoError = promoForm.querySelector('.promocode_err-msg');
+  const promoSaleBlock = document.querySelector('.promocode_sale');
+
+  // Флаг для отслеживания состояния промокода
+  let isPromoApplied = false;
+
+  promoForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    if (isPromoApplied) {
+      resetPromo();
+    } else {
+      const promoValue = promoInput.value.trim();
+
+      if (promoValue === '') {
+        showErrorPromo('Введите промокод');
+      } else if (!isValidPromoCode(promoValue)) {
+        showErrorPromo('Неверный промокод');
+      } else {
+        applyPromo();
+      }
+    }
+  });
+
+  function showErrorPromo(message) {
+    promoError.textContent = message;
+    promoError.style.display = 'block';
+  }
+
+  function isValidPromoCode(code) {
+
+    const validCodes = ['КАМЧАТКА', 'SALE20', 'SPECIAL'];
+    return validCodes.includes(code.toUpperCase());
+  }
+
+  function applyPromo() {
+    promoError.style.display = 'none';
+    promoSaleBlock.style.display = 'flex';
+    promoInput.disabled = true;
+    promoBtn.classList.add('promo_btn_reset');
+    isPromoApplied = true;
+  }
+
+  function resetPromo() {
+    promoInput.value = '';
+    promoInput.disabled = false;
+    promoBtn.classList.remove('promo_btn_reset');
+    promoSaleBlock.style.display = 'none';
+    isPromoApplied = false;
+  }
