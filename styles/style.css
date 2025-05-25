@@ -6209,46 +6209,246 @@ section:first-child {
     line-height: 140%;
     max-width: 752px;
 }
+
 .section_menu__hint {
     font-size: 18px;
     color: var(--gray1);
     line-height: 140%;
     max-width: 751px;
 }
+
 .foodmall_menu__items {
     margin-top: 48px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 32px;
 }
-.foodmall_menu__item_wrapper{
+
+.foodmall_menu__item_wrapper {
     padding: 16px;
-    
     width: 100%;
-    
- 
-   position: relative;
+    position: relative;
 }
+
 .foodmall_menu__item_wrapper::before {
     top: 50%;
     content: '';
     position: absolute;
-  width: 25%;
-  height: 25%;
-  transform: scale(4) translate(-12.5%, -12.5%);
+    width: 25%;
+    height: 25%;
+    transform: scale(4) translate(-12.5%, -12.5%);
     left: 50%;
     border-bottom: 1px dashed var(--border);
-   border-radius: 45px;
+    border-radius: 45px;
 }
+
 .foodmall_menu__item {
     width: 100%;
     height: 100%;
     padding: 16px 15px 40px;
     border-radius: 160px;
-     background-color: var(--bacground);
+    background-color: var(--bacground);
+    text-align: center;
 }
+
 .foodmall_menu__item.bg_green {
     background-color: #D0E3D2;
+}
+
+.foodmall_menu__item.bg_blue {
+    background-color: #C6D1ED;
+}
+
+.foodmall_menu__item.bg_pink {
+    background-color: #F4CBCB;
+}
+
+.foodmall_menu__item_img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+}
+
+.foodmall_menu__item_title {
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 17px;
+    line-height: 140%;
+
+}
+
+.foodmall_menu__item_text {
+    font-size: 18px;
+    margin-top: 8px;
+    line-height: 140%;
+}
+
+.foodmall_menu__item_price {
+    font-weight: 700;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 24px;
+    background-color: var(--white);
+    line-height: 140%;
+
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 24px;
+}
+.foodmall_menu_list__row {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+.foodmall_menu_list {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 25px;
+    margin-top: 98px;
+}
+.foodmall_menu_list__item_title {
+    font-weight: 400;
+    font-family: 'Neucha';
+    font-size: 60px;
+    line-height: 100%;
+    
+}
+.foodmall_menu_list__item_top {
+    padding-bottom: 10px;
+    position: relative;
+    padding-right: 80px;
+}
+
+.foodmall_menu_list__item_top::after {
+    content: '';
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    left: 50%;
+    width: 25%;
+    height: 25%;
+    z-index: -1;
+    border-bottom: 1px dashed var(--gray);
+    transform: scale(4) translate(-12.5%, -12.5%);
+}
+.foodmall_menu_list__item_top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+.foodmall_menu_list__item_top.icon_krab::before {
+    width: 80px;
+    height: 79px;
+    background: url('../img/foodmall/krab.png') 50% / contain no-repeat;
+}
+.foodmall_menu_list__item_top.icon_desert::before {
+    width: 64px;
+    height: 59px;
+    background: url('../img/foodmall/gimolost.png') 50% / contain no-repeat;
+}
+.foodmall_menu_list__item_top.icon_drink::before {
+    width: 49px;
+    height: 63px;
+    background: url('../img/foodmall/les.png') 50% / contain no-repeat;
+}
+.foodmall_menu_list__item_top.icon_salat::before {
+    width: 52px;
+    height: 63px;
+    background: url('../img/foodmall/paporotnik.png') 50% / contain no-repeat;
+}
+.foodmall_menu_list__item_top.icon_lepesh::before {
+    width: 68px;
+    height: 58px;
+    background: url('../img/foodmall/shipovnik.png') 50% / contain no-repeat;
+}
+.foodmall_menu_list__item_top.icon_dop::before {
+    width: 56px;
+    height: 52px;
+    background: url('../img/foodmall/krevetka.png') 50% / contain no-repeat;
+}
+.foodmall_menu_list__bottom {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.foodmall_menu_list__line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    line-height: 140%;
+}
+.foodmall_menu_list__price {
+    font-weight: 700;
+    padding: 8px 16px;
+    border-radius: 24px;
+    border: 1px solid var(--border);
+    flex-shrink: 0;
+}
+.foodmall_menu_list__line_option {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+.foodmall_menu_list__line-hint {
+    color: var(--gray1);
+}
+.foodmall_map__time_items {
+    display: flex;
+    gap: 60px;
+    margin-top: 60px;
+    flex-wrap: wrap;
+
+}
+.foodmall_map__time_item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 18px;
+    line-height: 140%;
+     position: relative;
+     padding-left: 32px;
+}
+.foodmall_map__time_item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background: url('../img/icons/clock_black.svg') 50% / contain no-repeat;
+}
+.section_foodmall_map_content {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 60px;
+}
+.section_foodmall_map_content .section__title{
+    max-width: 506px;
+    color: var(--red);
+    margin-bottom: 8px;
+}
+.foodmall_map__time_item span:last-child {
+    font-weight: 700;
+    color: var(--red);
+}
+.foodmall_map__container-map {
+    max-width: 883px;
+    width: 100%;
+    height: 548px;
+    overflow: hidden;
+    border-radius: 16px;
+}
+.foodmall_map__container-map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section__title_text {
+    font-size: 18px;
 }
 /* foodmall end */
 
@@ -6396,6 +6596,13 @@ section:first-child {
     .video_icon::after {
         width: 20px;
         height: 20px;
+    }
+    .foodmall_menu_list {
+        grid-template-columns: 1fr 1fr;
+    }
+    .foodmall_menu_list__item_top::before {
+        top: auto;
+        bottom: 10px;
     }
 }
 
@@ -7820,9 +8027,118 @@ section:first-child {
     .foodmall__container p {
         font-size: 14px;
     }
+
     .foodmall__container {
         margin-top: 24px;
     }
+
+    .section_menu__hint {
+        font-size: 14px;
+    }
+
+    .foodmall_menu__items {
+        margin-top: 24px;
+        gap: 16px;
+    }
+
+    .foodmall_menu__item {
+        padding: 8px 12px 30px;
+    }
+
+    .foodmall_menu__item_wrapper {
+        padding: 6px;
+    }
+
+    .foodmall_menu__item_title {
+        font-size: 14px;
+        margin-top: 6px;
+    }
+
+    .foodmall_menu__item_text {
+        font-size: 12px;
+        margin-top: 2px;
+    }
+
+    .foodmall_menu__item_price {
+        padding: 4px 8px;
+        font-size: 14px;
+        margin-top: 7px;
+    }
+    .section_foodmall_menu__content .section__top{
+        gap: 24px;
+        flex-wrap: wrap;
+    }
+    .foodmall_menu_list__item_title {
+        font-size: 32px;
+    }
+    .foodmall_menu_list__item_top.icon_krab::before {
+    width: 58px;
+    height: 53px;
+    }
+    .foodmall_menu_list__item_top.icon_salat::before {
+    width: 36px;
+    height: 44px;
+}
+.foodmall_menu_list__item_top.icon_desert::before {
+    width: 42px;
+    height: 39px;
+}
+.foodmall_menu_list__item_top.icon_lepesh::before {
+    width: 45px;
+    height: 39px;
+}
+.foodmall_menu_list__item_top.icon_drink::before {
+    width: 36px;
+    height: 46px;
+}
+.foodmall_menu_list__item_top.icon_dop::before {
+    width: 34px;
+    height: 40px;
+}
+.foodmall_menu_list__bottom {
+    margin-top: 24px;
+}
+.foodmall_menu_list__line {
+    font-size: 14px;
+    gap: 20px;
+    
+}
+.foodmall_menu_list__line br {
+    display: none;
+}
+.foodmall_menu_list__row {
+    gap: 50px;
+}
+.foodmall_menu_list {
+    gap: 50px;
+}
+.section__title_text {
+    font-size: 14px;
+}
+.foodmall_map__time_items {
+    margin-top: 32px;
+    gap: 24px;
+}
+.section_foodmall_map_content .section__title {
+    max-width: 343px;
+}
+.foodmall_map__time_item {
+    font-size: 14px;
+    padding-left: 28px;
+}
+.section_foodmall_map_content  {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 24px;
+}
+.foodmall_map__time_item::before {
+    width: 20px;
+    height: 20px;
+}
+.foodmall_map__container-map {
+    max-width: none;
+    height: 370px;
+}
 }
 
 @media (max-width: 1060px) {
@@ -7839,6 +8155,7 @@ section:first-child {
         min-width: 0;
         height: auto;
     }
+
 }
 
 @media (max-width:1000px) {
@@ -8138,9 +8455,11 @@ section:first-child {
     .section_form_price__info {
         max-width: none;
     }
+
     .foodmall__container {
         flex-direction: column;
     }
+
     .foodmall__img {
         height: auto;
         max-height: 387px;
@@ -8261,12 +8580,23 @@ section:first-child {
         margin: 0 auto;
         margin-top: 24px;
     }
+    .foodmall_menu__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+    .foodmall_menu__items br {
+        display: none;
+    }
 }
 
 
 
 @media (max-width:710px) {
     .about__items_container {
+        grid-template-columns: 1fr;
+    }
+    .foodmall_menu_list {
         grid-template-columns: 1fr;
     }
 }
