@@ -6485,7 +6485,7 @@ section:first-child {
     align-items: center;
     justify-content: center;
     padding: 27% 21%;
-    
+    overflow: hidden;
 }
 .brands__item:hover {
     border: 1px solid #CBCBCB;
@@ -6498,6 +6498,11 @@ section:first-child {
     height: 100%;
     object-fit: contain;
     transition: transform .5s ease;
+}
+@supports (-webkit-touch-callout: none) {
+    .brands__item img {
+        -webkit-object-fit: contain;
+    }
 }
 /* brands end */
 
