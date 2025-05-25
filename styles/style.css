@@ -56,11 +56,11 @@ a {
     text-decoration: none;
 }
 
-ul {
+ul li {
     color: var(--red);
 }
 
-ul span {
+ul li > * {
     color: var(--black);
 }
 
@@ -6453,6 +6453,21 @@ section:first-child {
 }
 /* foodmall end */
 
+/* politics start */
+.politics__content {
+    max-width:1013px;
+}
+.politics__list {
+    max-width: 883px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-left: 1.5em;
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 140%;
+}
+/* politics end */
 
 
 
@@ -8139,6 +8154,13 @@ section:first-child {
 .foodmall_map__container-map {
     max-width: none;
     height: 370px;
+}
+.politics__list {
+   font-size: 14px;
+   margin-top: 32px;
+}
+.section_politics .section__title {
+    font-size: 24px;
 }
 }
 
