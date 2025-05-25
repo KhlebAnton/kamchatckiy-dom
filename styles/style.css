@@ -2584,6 +2584,7 @@ section:first-child {
     display: flex;
     align-items: center;
     gap: 8px;
+    flex-wrap: wrap;
 }
 
 .btn_card_basket::before {

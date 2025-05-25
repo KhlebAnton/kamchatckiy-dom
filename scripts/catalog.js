@@ -3,23 +3,26 @@ document.addEventListener('DOMContentLoaded', function () {
     const dropdownBtn = document.querySelector('.sort-dropdown-btn');
     const dropdownItems = document.querySelectorAll('.sort-dropdown__item');
 
-    dropdownBtn.addEventListener('click', function (e) {
-        e.stopPropagation();
-        dropdown.classList.toggle('open');
-    });
-
-    dropdownItems.forEach(item => {
-        item.addEventListener('click', function () {
-            dropdownBtn.textContent = this.textContent;
-            dropdown.classList.remove('open');
+    if (dropdownBtn) {
+        dropdownBtn.addEventListener('click', function (e) {
+            e.stopPropagation();
+            dropdown.classList.toggle('open');
         });
-    });
 
-    document.addEventListener('click', function (e) {
-        if (!dropdown.contains(e.target)) {
-            dropdown.classList.remove('open');
-        }
-    });
+        dropdownItems.forEach(item => {
+            item.addEventListener('click', function () {
+                dropdownBtn.textContent = this.textContent;
+                dropdown.classList.remove('open');
+            });
+        });
+
+        document.addEventListener('click', function (e) {
+            if (!dropdown.contains(e.target)) {
+                dropdown.classList.remove('open');
+            }
+        });
+    }
+
 
 
     // Элементы диапазона цен
@@ -87,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const applyBtn = document.querySelector('.filter__button--apply');
     const resetBtn = document.querySelector('.filter__button--reset');
 
-  
+
 
     resetBtn.addEventListener('click', function () {
         // Сброс всех фильтров
@@ -107,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     filterSectionArr.forEach(section => {
         let title = section.querySelector('.filter__title');
-        title.addEventListener('click', ()=> {
+        title.addEventListener('click', () => {
             section.classList.toggle('open')
         })
     })
@@ -115,22 +118,24 @@ document.addEventListener('DOMContentLoaded', function () {
     const btnFilter = document.querySelector('.btn_filter_mobile');
     const filterMenu = document.querySelector('.catalog__filter');
     const btnCloseFilter = filterMenu.querySelector('.filter__close');
-    
 
-    btnFilter.addEventListener('click', ()=> {
-        filterMenu.classList.add('open');
-        toggleScroll(false)
+    if (btnFilter) {
+        btnFilter.addEventListener('click', () => {
+            filterMenu.classList.add('open');
+            toggleScroll(false)
 
-    })
+        })
 
-    btnCloseFilter.addEventListener('click', ()=> {
-        filterMenu.classList.remove('open');
-        toggleScroll(true)
+        btnCloseFilter.addEventListener('click', () => {
+            filterMenu.classList.remove('open');
+            toggleScroll(true)
 
-    })
-    applyBtn.addEventListener('click', ()=> {
-        filterMenu.classList.remove('open');
-        toggleScroll(true)
+        })
+        applyBtn.addEventListener('click', () => {
+            filterMenu.classList.remove('open');
+            toggleScroll(true)
 
-    })
+        })
+    }
+
 });
