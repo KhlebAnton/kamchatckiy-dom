@@ -5860,6 +5860,7 @@ section:first-child {
     margin-left: auto;
     margin-top: 80px;
     margin-bottom: 40px;
+    line-height: 140%;
 }
 
 .advantages__item {
@@ -6468,6 +6469,40 @@ section:first-child {
     line-height: 140%;
 }
 /* politics end */
+
+/* brands start */
+
+.brands_container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 32px;
+}
+.brands__item {
+    width: 100%;
+    aspect-ratio: 1 /1;
+    border-radius: 100%;
+    display: block;
+
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 27% 21%;
+    
+}
+.brands__item:hover {
+    border: 1px solid #CBCBCB;
+}
+.brands__item:hover img {
+    transform: scale(1.1);
+}
+.brands__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform .5s ease;
+}
+/* brands end */
 
 
 
@@ -7389,7 +7424,9 @@ section:first-child {
         gap: 16px;
 
     }
-
+.brands_container {
+    gap: 27px;
+}
     .card-product__title_top {
         font-size: 24px;
     }
@@ -8574,12 +8611,17 @@ section:first-child {
         width: 100%;
     }
 
+
 }
 
 @media (max-width:800px) {
     .form__label.error {
         margin-bottom: 32px;
     }
+    .brands_container {
+    gap:16px;
+    grid-template-columns: 1fr 1fr;
+}
 }
 
 @media (max-width:755px) {
