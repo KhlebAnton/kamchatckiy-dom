@@ -59,6 +59,12 @@ allTabs.forEach(tab => {
 // Обработчик для кнопок "Подробнее о заказе"
 orderMoreButtons.forEach(button => {
     button.addEventListener('click', function () {
+        window.scrollTo(
+            {
+                top: 0,
+                behavior: 'smooth'
+            }
+        )
         // Сохраняем текущую активную вкладку как предыдущую
         previousTab = document.querySelector('.acc-tab.active').getAttribute('data-tab');
 
@@ -77,6 +83,12 @@ orderMoreButtons.forEach(button => {
 
 // Обработчик для кнопки "К списку заказов"
 backToOrdersButton.addEventListener('click', function () {
+    window.scrollTo(
+        {
+            top: 0,
+            behavior: 'smooth'
+        }
+    )
     // Скрываем контейнер с информацией о заказе
     const orderInfoContainer = document.querySelector('[data-content="page-order"]');
     if (orderInfoContainer) {
@@ -104,6 +116,12 @@ document.addEventListener('click', function (e) {
 // Функция для активации таба по индексу
 function activateTab(tabIndex) {
     // Удаляем активный класс у всех табов (кроме таба в кнопке)
+    window.scrollTo(
+        {
+            top: 0,
+            behavior: 'smooth'
+        }
+    )
     allTabs.forEach(tab => {
         tab.classList.remove('active');
     });
@@ -128,60 +146,60 @@ function activateTab(tabIndex) {
 }
 
 // Инициализация - активируем первый таб при загрузке
-activateTab('4');
+activateTab('0');
 
-    const historyItems = document.querySelectorAll('.personal_bonus__history__item');
-    const showMoreBtn = document.querySelector('.btn_more_history_bonus');
-    const step = 4; // Показывать по 4 элемента за раз
-    let visibleCount = 0; // Счетчик видимых элементов
+const historyItems = document.querySelectorAll('.personal_bonus__history__item');
+const showMoreBtn = document.querySelector('.btn_more_history_bonus');
+const step = 4; // Показывать по 4 элемента за раз
+let visibleCount = 0; // Счетчик видимых элементов
 
-    // Показываем первые 4 элемента при загрузке
-    function init() {
-        visibleCount = Math.min(step, historyItems.length);
-        for (let i = 0; i < visibleCount; i++) {
+// Показываем первые 4 элемента при загрузке
+function init() {
+    visibleCount = Math.min(step, historyItems.length);
+    for (let i = 0; i < visibleCount; i++) {
+        historyItems[i].classList.add('visible');
+    }
+    updateButtonText();
+}
+
+// Обновляем текст кнопки
+function updateButtonText() {
+    if (visibleCount >= historyItems.length) {
+        showMoreBtn.textContent = 'Скрыть все';
+        showMoreBtn.classList.add('active');
+    } else {
+        showMoreBtn.textContent = 'Показать еще';
+        showMoreBtn.classList.remove('active');
+    }
+
+    // Скрываем кнопку, если все элементы видны или их меньше step
+    if (historyItems.length <= step) {
+        showMoreBtn.style.display = 'none';
+    } else {
+        showMoreBtn.style.display = 'flex';
+    }
+}
+
+// Обработчик клика
+showMoreBtn.addEventListener('click', function () {
+    // Если все элементы уже показаны - скрываем лишние
+    if (visibleCount >= historyItems.length) {
+        for (let i = step; i < historyItems.length; i++) {
+            historyItems[i].classList.remove('visible');
+        }
+        visibleCount = step;
+    }
+    // Иначе показываем +4 элемента
+    else {
+        const nextItems = Math.min(visibleCount + step, historyItems.length);
+        for (let i = visibleCount; i < nextItems; i++) {
             historyItems[i].classList.add('visible');
         }
-        updateButtonText();
+        visibleCount = nextItems;
     }
 
-    // Обновляем текст кнопки
-    function updateButtonText() {
-        if (visibleCount >= historyItems.length) {
-            showMoreBtn.textContent = 'Скрыть все';
-            showMoreBtn.classList.add('active');
-        } else {
-            showMoreBtn.textContent = 'Показать еще';
-            showMoreBtn.classList.remove('active');
-        }
+    updateButtonText();
+});
 
-        // Скрываем кнопку, если все элементы видны или их меньше step
-        if (historyItems.length <= step) {
-            showMoreBtn.style.display = 'none';
-        } else {
-            showMoreBtn.style.display = 'flex';
-        }
-    }
-
-    // Обработчик клика
-    showMoreBtn.addEventListener('click', function() {
-        // Если все элементы уже показаны - скрываем лишние
-        if (visibleCount >= historyItems.length) {
-            for (let i = step; i < historyItems.length; i++) {
-                historyItems[i].classList.remove('visible');
-            }
-            visibleCount = step;
-        } 
-        // Иначе показываем +4 элемента
-        else {
-            const nextItems = Math.min(visibleCount + step, historyItems.length);
-            for (let i = visibleCount; i < nextItems; i++) {
-                historyItems[i].classList.add('visible');
-            }
-            visibleCount = nextItems;
-        }
-        
-        updateButtonText();
-    });
-
-    // Инициализация
-    init();
+// Инициализация
+init();
