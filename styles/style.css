@@ -5886,7 +5886,7 @@ section:first-child {
 
 .advantages__item_content {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     background-color: var(--red);
     border-radius: 100%;
     display: flex;
@@ -6187,6 +6187,70 @@ section:first-child {
 
 /* production end*/
 
+/* foodmall start */
+
+.foodmall__container {
+    margin-top: 60px;
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+}
+
+.foodmall__img {
+    border-radius: 16px;
+    max-width: 621px;
+    width: 100%;
+    height: 372px;
+    object-fit: cover;
+}
+
+.foodmall__container p {
+    font-size: 18px;
+    line-height: 140%;
+    max-width: 752px;
+}
+.section_menu__hint {
+    font-size: 18px;
+    color: var(--gray1);
+    line-height: 140%;
+    max-width: 751px;
+}
+.foodmall_menu__items {
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+}
+.foodmall_menu__item_wrapper{
+    padding: 16px;
+    
+    width: 100%;
+    
+ 
+   position: relative;
+}
+.foodmall_menu__item_wrapper::before {
+    top: 50%;
+    content: '';
+    position: absolute;
+  width: 25%;
+  height: 25%;
+  transform: scale(4) translate(-12.5%, -12.5%);
+    left: 50%;
+    border-bottom: 1px dashed var(--border);
+   border-radius: 45px;
+}
+.foodmall_menu__item {
+    width: 100%;
+    height: 100%;
+    padding: 16px 15px 40px;
+    border-radius: 160px;
+     background-color: var(--bacground);
+}
+.foodmall_menu__item.bg_green {
+    background-color: #D0E3D2;
+}
+/* foodmall end */
 
 
 
@@ -7752,6 +7816,13 @@ section:first-child {
         gap: 16px;
         padding: 24px;
     }
+
+    .foodmall__container p {
+        font-size: 14px;
+    }
+    .foodmall__container {
+        margin-top: 24px;
+    }
 }
 
 @media (max-width: 1060px) {
@@ -8067,7 +8138,14 @@ section:first-child {
     .section_form_price__info {
         max-width: none;
     }
-
+    .foodmall__container {
+        flex-direction: column;
+    }
+    .foodmall__img {
+        height: auto;
+        max-height: 387px;
+        max-width: none;
+    }
 }
 
 @media (max-width:890px) {
@@ -8153,6 +8231,7 @@ section:first-child {
         padding-top: 0;
         width: 100%;
     }
+
 }
 
 @media (max-width:800px) {
