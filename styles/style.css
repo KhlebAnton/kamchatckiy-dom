@@ -6271,6 +6271,7 @@ section:first-child {
     left: 50%;
     border-bottom: 1px dashed var(--border);
     border-radius: 45px;
+    pointer-events: none;
 }
 
 .foodmall_menu__item {
