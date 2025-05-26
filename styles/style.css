@@ -7120,7 +7120,6 @@ font-size: 16px;
         padding-bottom: 109px;
     }
     
-    /* Основной слайдер */
     .gallery-swiper {
         width: 100%;
         height: 797px;
@@ -7141,12 +7140,8 @@ font-size: 16px;
         display: block;
     }
     
-    
-    /* Слайдер миниатюр */
     .thumbs-swiper {
         width: 100%;
-
-        
     }
     
     .thumbs-swiper .swiper-slide {
@@ -7193,8 +7188,97 @@ font-size: 16px;
         position: absolute;
         
     }
-
-
+/* gallery end */
+/* contacts start */
+.contacts__container {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+.contacts__item {
+    padding: 32px;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+}
+.contacts__item_title {
+    font-size: 18px;
+    color: var(--blue2);
+    margin-bottom: 8px;
+}
+.contacts__item_adress {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 110%;
+    letter-spacing: -2px;
+}
+.contacts__item__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 36px;
+    max-width: 600px;
+}
+.contacts__item__link {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.contacts__item__link a {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+}
+.contacts__item__link a:hover {
+    color: var(--blue2);
+}
+.contacts__item__link span {
+    font-size: 18px;
+    color: var(--gray);
+}
+.contacts__item__map {
+    width: 100%;
+    height: 404px;
+    border-radius: 16px;
+    overflow: hidden;
+}   
+.contacts__item__map img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section_requisites__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    padding-top: 16px;
+    border-top: 1px dashed #9A9A9A;
+}
+.requisites__title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 110%;
+}
+.requisites__info {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.requisites__info_items {
+    display: flex;
+    gap: 32px;
+}
+.requisites__info_item {
+    display: flex;
+    flex-direction: column;
+}
+.requisites__info_item span:first-child {
+    color: var(--gray1);
+}
+/* contacts end */
 
 
 
@@ -9144,7 +9228,39 @@ font-size: 16px;
     .gallery-container {
         padding-bottom: 81px;
     }
-
+    .contacts__container {
+        gap: 16px;
+        margin-top: 32px;
+    }
+    .contacts__item {
+        padding: 16px;
+    }
+    .contacts__item__link span ,
+    .contacts__item_title {
+        font-size: 14px;
+    }
+    .contacts__item_adress {
+        font-size: 24px;
+    }
+    .contacts__item__link a  {
+        font-size: 16px;
+    }
+.contacts__item__links {
+    flex-direction: column;
+}
+.contacts__item__map {
+    height: 244px;
+}
+.section_requisites__content {
+    grid-template-columns: 1fr;
+}
+.requisites__title {
+    font-size: 24px;
+}
+.requisites__info {
+    font-size: 16px;
+    
+}
 }
 
 @media (max-width: 1060px) {
@@ -9637,6 +9753,9 @@ gap: 32px 16px;
     }
 
     .foodmall_menu_list {
+        grid-template-columns: 1fr;
+    }
+    .contacts__container {
         grid-template-columns: 1fr;
     }
 }
