@@ -28,17 +28,5 @@ document.addEventListener('DOMContentLoaded', function () {
         },
 
     });
-    const swiperNews = new Swiper('.news_home_swiper-container', {
-        slidesPerView: 'auto',
-        spaceBetween: 16,
-        breakpoints: {
-            1220: {
-                slidesPerView: 'auto',
-                spaceBetween: 32
-            },
-             
-        },
-
-    });
 
 });
