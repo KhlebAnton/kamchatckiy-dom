@@ -41,6 +41,8 @@ const btnAccountUser = document.querySelectorAll('.btn_account');
 btnAccountUser.forEach(btn => {
     btn.addEventListener('click', ()=> {
         openModalAuth();
+         headerMenu.classList.remove('open');
+         btnMenu.classList.remove('active');
 })
 });
 
