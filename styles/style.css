@@ -9730,6 +9730,9 @@ gap: 32px 16px;
     .recipe_catalog__content {
         grid-template-columns: 1fr;
     }
+    .recipes__content_hero__info {
+        max-width: none;
+    }
 }
 
 @media (max-width:600px) {
