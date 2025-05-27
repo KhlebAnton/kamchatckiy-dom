@@ -9751,6 +9751,10 @@ section:first-child {
 
     .jobs__item__top {
         padding: 16px;
+        flex-direction: column;
+        align-items: start;
+        padding-right: 60px;
+        gap: 8px;
     }
 
     .bonus_info {
