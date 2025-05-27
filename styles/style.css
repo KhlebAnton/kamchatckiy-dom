@@ -9762,7 +9762,9 @@ section:first-child {
         gap: 24px;
         margin-top: 40px;
     }
-
+.catalog__products .btn{
+    height: 36px;
+}
     .bonus_info,
     .bonus_info__text {
         gap: 24px;
@@ -10187,7 +10189,9 @@ section:first-child {
         grid-column: 1;
         grid-row: 1;
     }
-
+.card-product__btn-group .btn {
+    padding: 0 10px;
+}
     .jobs_items__wrapper {
         grid-template-columns: 1fr;
     }
@@ -10257,6 +10261,8 @@ section:first-child {
 
     .catalog__btn_filters {
         width: 100%;
+        flex-wrap: wrap;
+        gap: 12px;
     }
 
     .catalog__filter {
@@ -10564,5 +10570,8 @@ section:first-child {
 
     .advantages__items {
         grid-template-columns: 1fr;
+    }
+    .catalog__products {
+       grid-template-columns: 1fr;
     }
 }
